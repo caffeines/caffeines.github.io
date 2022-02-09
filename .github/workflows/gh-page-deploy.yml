@@ -25,10 +25,18 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
 
-    - run: rm -rf node_modules
-    - run: rm -rf .next
-    - run: yarn install --immutable --immutable-cache --check-cache
-    - run: yarn build
+    - name: Remove node modules
+      run: rm -rf node_modules
+
+    - name: Remove .next
+      run: rm -rf .next
+
+    - name: Install dependencies
+      run: yarn install --immutable --immutable-cache --check-cache
+
+    - name: Build application
+      run: yarn build
+      
     - run: yarn export
     - run: touch ./out/.nojekyll
     
