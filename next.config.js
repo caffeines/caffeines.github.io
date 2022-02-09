@@ -4,6 +4,6 @@ module.exports = {
     loader: 'imgix',
     path: 'https://caffeines.github.io',
   },
-  // basePath: '/',
-  // assetsPrefix: '/'
+  // basePath: '/sadat.me',
+  assetsPrefix: './'
 }
