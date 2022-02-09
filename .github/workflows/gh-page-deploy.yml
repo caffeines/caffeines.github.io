@@ -26,9 +26,11 @@ jobs:
         cache: 'yarn'
 
     - run: rm -rf node_modules
+    - run: rm -rf .next
     - run: yarn install --immutable --immutable-cache --check-cache
     - run: yarn build
     - run: yarn export
+    - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.2.3
