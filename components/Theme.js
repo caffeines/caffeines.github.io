@@ -4,22 +4,24 @@ import { useTheme } from 'next-themes'
 const ThemeSwitch = () => {
     const [mounted, setMounted] = useState(false)
     const { theme, setTheme, resolvedTheme } = useTheme()
-
     // When mounted on client, now we can show the UI
-    useEffect(() => setMounted(true), [])
+    useEffect(() => {
+        setTheme(theme|| "dark")
+        setMounted(true)
+    }, [])
 
     return (
         <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="w-8 h-8 p-1 ml-1 mr-1 rounded sm:ml-4"
+            className="w-8 h-8 p-1 ml-1 mr-1 rounded sm:ml-4 dark:bg-slate-700 bg-slate-200"
             onClick={() => setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="text-gray-900 dark:text-gray-100"
+                className="dark:text-yellow-500 text-gray-700"
             >
                 {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
                     <path
