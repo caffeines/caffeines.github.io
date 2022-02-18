@@ -17,7 +17,7 @@ const About = () => {
                     <div className="mt-6 text-gray-800 dark:text-white">
                         <div className="mb-4">
                         I&apos;m <b>Abu Sadat Md. Sayem</b>, a software developer from Bangladesh. Currently working as a Software Engineer (Backend) at 
-                        <a href="https://tigerit.com/" target="_blank" rel="noreferrer"> TigerIT </a>. 
+                        <a href="https://tigerit.com/" target="_blank" rel="noreferrer" className={"transition-colors hover:text-yellow-500 font-medium"}> TigerIT </a>. 
                         <br></br>
                         <br></br>
                         I have over 3 years of scalable software design and development experience. In this time I have developed applications 
