@@ -1,9 +1,9 @@
 module.exports = {
   reactStrictMode: true,
-  images: {
-    loader: 'imgix',
-    path: 'https://caffeines.github.io',
-  },
+  // images: {
+  //   loader: 'imgix',
+  //   path: '/',
+  // },
   // basePath: '/sadat.me',
   // assetsPrefix: ''
 }
