@@ -4,7 +4,6 @@ import profile from "../public/profile.jpeg"
 
 const About = () => {
     const handleContactClick = () => {
-        console.log("clicked");
         window.open("mailto:sadat.talks@gmail.com")
     }
     return (
@@ -16,12 +15,12 @@ const About = () => {
                     </h1>
                     <div className="mt-6 text-gray-800 dark:text-white">
                         <div className="mb-4">
-                        I&apos;m <b>Abu Sadat Md. Sayem</b>, a software developer from Bangladesh. Currently working as a Software Engineer (Backend) at 
-                        <a href="https://tigerit.com/" target="_blank" rel="noreferrer" className={"transition-colors hover:text-yellow-500 font-medium"}> TigerIT </a>. 
+                        I&apos;m <b>Abu Sadat Md. Sayem</b>, a software developer from Bangladesh. Currently working as a Senior Software Engineer at 
+                        <a href="https://durbinlabs.com/" target="_blank" rel="noreferrer" className={"transition-colors hover:text-yellow-500 font-medium"}> Durbin Labs Ltd. </a>. 
                         <br></br>
                         <br></br>
                         I have over 3 years of scalable software design and development experience. In this time I have developed applications 
-                        on different verticals including messaging, audio/video streaming, EdTech, and so on.
+                        on different verticals including messaging, audio/video streaming, EdTech, Healthtech and so on.
                         <br></br>
                         <br></br>
                         {/* I&apos;m looking for a backend system development opportunity using Golang/Python/Node.js */}
