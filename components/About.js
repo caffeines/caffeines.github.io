@@ -20,10 +20,10 @@ const About = () => {
                         <br></br>
                         <br></br>
                         I have over 3 years of scalable software design and development experience. In this time I have developed applications 
-                        on different verticals including messaging, audio/video streaming, EdTech, Healthtech and so on.
+                        on different verticals including messaging, audio/video streaming, EdTech, HealthTech and so on.
                         <br></br>
                         <br></br>
-                        {/* I&apos;m looking for a backend system development opportunity using Golang/Python/Node.js */}
+                        I&apos;m looking for a backend system development opportunity using Golang/Node.js
                         <div className="mt-10">
                             <button 
                             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full"

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import About from '../components/About';
+import Experience from '../components/Experience';
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
         <meta name='name' content='sadat' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className="max-w-4xl mx-auto mt-16 antialiased">
-        <About/>
+      <main className="max-w-4xl mx-auto mt-4 antialiased">
+        <About />
+        <Experience />
       </main>
     </div>
   );
