@@ -96,3 +96,15 @@ export const experiences = [
     image: "https://durbinlabs.com/images/favicon.png"
   },
 ]
+
+export const about = {
+  name: "Abu Sadat Md. Sayem",
+  jobDescription: "a software developer from Bangladesh. Currently working as a Senior Software Engineer at",
+  company: {
+    name: "Durbin Labs Ltd.",
+    link: "https://durbinlabs.com",
+  },
+  description: "I have over 3 years of scalable software design and development experience. In this time I have developed applications \
+  on different verticals including messaging, audio/video streaming, EdTech, HealthTech and so on.",
+  opening: "I'm looking for a backend system development opportunity using Go/Node.js",
+}

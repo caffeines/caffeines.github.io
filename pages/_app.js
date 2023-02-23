@@ -7,13 +7,13 @@ import { ThemeProvider } from 'next-themes'
 function MyApp({ Component, pageProps }) {
   
   return (
-    <>
+    <div className='font-jetbrains'>
       <ThemeProvider attribute="class" enableSystem={true}>
         <Navigation/>
         <Component {...pageProps} />
         <Footer/>
       </ThemeProvider>
-    </>
+    </div>
   )
 }
 

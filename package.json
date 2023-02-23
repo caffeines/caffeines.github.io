@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "flowbite": "^1.6.3",
+    "flowbite-react": "^0.3.8",
     "next": "12.0.10",
     "next-themes": "^0.0.15",
     "react": "17.0.2",

@@ -7,7 +7,7 @@ function Project() {
     <ProjectCard key={index} project={project} />
   ));
   return (
-    <section className="mt-32 px-5 mb-10">
+    <section className="px-4 mb-10 mt-20">
       <h1 className="text-2xl font-bold text-gray-900 lg:text-5xl dark:text-white text-left">
         Projects
       </h1>

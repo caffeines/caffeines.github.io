@@ -17,7 +17,7 @@ export default function Experience() {
     )
   })
   return (
-    <div className="container px-4 mx-auto leading-7 mt-24">
+    <div className="container px-4 mx-auto leading-7 mt-20">
       <h1 className="text-2xl font-bold text-gray-900 lg:text-5xl dark:text-white text-left">
         Experience
       </h1>
