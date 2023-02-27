@@ -187,3 +187,138 @@ export const moocs = [
     skills: ["aws", "cloud", "devops"],
   },
 ]
+
+export const skills = [
+  {
+    name: "Go",
+    level: "expert",
+    image: "https://miro.medium.com/max/600/1*i2skbfmDsHayHhqPfwt6pA.png",
+    exps: "2 years",
+  },
+  {
+    name: "AWS",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/fbceb94436312b6dacde68d122a5b9c7d11f9524/topics/aws/aws.png",
+    exps: "2 years",
+  },
+  {
+    name: "Node.js",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png",
+    exps: "4 years",
+  },
+  {
+    name: "Git",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png",
+    exps: "4 years",
+  },
+  {
+    name: "React",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png",
+    exps: "2 years",
+  },
+  {
+    name: "JavaScript",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
+    exps: "4 years",
+  },
+  {
+    name: "Express.js",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png",
+    exps: "4 years",
+  },
+  {
+    name: "Problem Solving",
+    level: "expert",
+    image: "https://fullpotentialgroup.com/wp-content/uploads/2020/01/Problem-solving-RS2-750x675.jpg",
+    exps: "700+ solved",
+  },
+  {
+    name: "Docker",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png",
+    exps: "3 years",
+  },
+  {
+    name: "MongoDB",
+    level: "expert",
+    image: "https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress",
+    exps: "4 years",
+  },
+  {
+    name: "PostgreSQL",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png",
+    exps: "2 years",
+  },
+  {
+    name: "Redis",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redis/redis.png",
+    exps: "3 years",
+  },
+  {
+    name: "TypeScript",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png",
+    exps: "1 years",
+  },
+  {
+    name: "DS & Algo",
+    level: "expert",
+    image: "https://miro.medium.com/max/1400/0*UVG1F-0kLAEWAT3k",
+    exps: "6 years",
+  },
+  {
+    name: "Python",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png",
+    exps: "2 years",
+  },
+  {
+    name: "Flask",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flask/flask.png",
+    exps: "1 year",
+  },
+  {
+    name: "WebSocket",
+    level: "expert",
+    image: "https://i0.wp.com/iotready.co/wp-content/uploads/2022/01/websockets.png?fit=650%2C400&ssl=1&w=640",
+    exps: "3 year",
+  },
+  {
+    name: "Nginx",
+    level: "expert",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbijXWVvQXKVCrVBXU_v3w80VHR-G6RdMLAV59cdqyW5s4G-XHY2s1NIkvrzns9cqKzRg&usqp=CAU",
+    exps: "3 years",
+  },
+  {
+    name: "HTML",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png",
+    exps: "4 years",
+  },
+  {
+    name: "CSS",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png",
+    exps: "4 years",
+  },
+  {
+    name: "Linux",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png",
+    exps: "5 years",
+  },
+  {
+    name: "Nest.js",
+    level: "expert",
+    image: "https://raw.githubusercontent.com/github/explore/37c71fdca4e12086faf8c7009793d2eb588c914e/topics/nestjs/nestjs.png",
+    exps: "1 year",
+  },
+]

@@ -41,6 +41,13 @@ const Nav = () => {
                     </Link>
                 </Navbar.Link>
                 <Navbar.Link>
+                    <Link href="/skills">
+                        <a className={"font-medium tracking-wider transition-color hover:text-yellow-500"}>
+                            Skills
+                        </a>
+                    </Link>
+                </Navbar.Link>
+                <Navbar.Link>
                     <Link href="/projects">
                         <a className={"font-medium tracking-wider transition-color hover:text-yellow-500"}>
                             Projects
