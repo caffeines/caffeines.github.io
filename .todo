@@ -1,6 +1,7 @@
+[x] Add nav bar for the navigation
 [ ] Populate all static data from the config file
-[ ] Add nav bar for the navigation
-[ ] Add pages for each of the nav bar items
+[x] Add pages for each of the nav bar items
 [ ] Add animations for the nav bar
 [ ] Add animations for the pages
+[ ] Fix nav bar issue for mobile view
 

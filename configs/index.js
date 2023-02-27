@@ -19,7 +19,10 @@ export const projects = [
     ],
     techStack: ['Node.js', 'TypeScript', 'Nest.js', 'MongoDB', 'Redis', 'WebSockets', 'EC2', 'S3', 'CloudFront', 'Docker'],
     link: 'https://doctordekhao.com.bd',
-    associatedWith: "Durbin Labs Ltd."
+    associatedWith: {
+      companyName: "Durbin Labs Ltd.",
+      companyLogo: "https://durbinlabs.com/images/favicon.png"
+    }
   },
   {
     title: 'CommChat',
@@ -33,7 +36,10 @@ export const projects = [
     ],
     techStack: ['Python-Flask', 'React.js', 'MQTT', 'Redis', 'Celery', 'PostgreSQL', 'WebRTC'],
     link: 'https://commchat.com',
-    associatedWith: "TigerIT Bangladesh Ltd."
+    associatedWith: {
+      companyName: "TigerIT Bangladesh Ltd.",
+      companyLogo: "https://tigerit.com/img/ti-logo.png"
+    }
   },
   {
     title: 'SwiftEx',
@@ -59,7 +65,10 @@ export const projects = [
     ],
     techStack: ['Node.js', 'Express.js', 'MongoDB', 'Redis', 'WebSockets', 'React.js', 'Elastic Beanstalk', 'ELB', 'EC2', 'S3', 'CloudFront', 'SES'],
     link: 'https://retinalms.com',
-    associatedWith: "Durbin Labs Ltd."
+    associatedWith: {
+      companyName: "Durbin Labs Ltd.",
+      companyLogo: "https://durbinlabs.com/images/favicon.png"
+    }
   },
 ]
 
@@ -104,7 +113,7 @@ export const about = {
     name: "Durbin Labs Ltd.",
     link: "https://durbinlabs.com",
   },
-  description: "I have over 3 years of scalable software design and development experience. In this time I have developed applications \
+  description: "I have over 3.5 years of scalable software design and development experience. In this time I have developed applications \
   on different verticals including messaging, audio/video streaming, EdTech, HealthTech and so on.",
   opening: "I'm looking for a backend system development opportunity using Go/Node.js",
 }

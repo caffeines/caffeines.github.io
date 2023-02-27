@@ -1,4 +1,4 @@
-import Project from '../components/Project';
+import Project from '../../components/Project';
 import Head from 'next/head';
 
 export default function Projects() {
