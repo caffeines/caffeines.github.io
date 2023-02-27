@@ -21,7 +21,7 @@ export const projects = [
     link: 'https://doctordekhao.com.bd',
     associatedWith: {
       companyName: "Durbin Labs Ltd.",
-      companyLogo: "https://durbinlabs.com/images/favicon.png"
+      companyLogo: "https://media.licdn.com/dms/image/C4D0BAQH7UK0KghPjAA/company-logo_100_100/0/1519888839489?e=1685577600&v=beta&t=fRziZeM01fZ8B9JZzoqo9QWWv5zT_T_72IrPM4jHNVM"
     }
   },
   {
@@ -67,7 +67,7 @@ export const projects = [
     link: 'https://retinalms.com',
     associatedWith: {
       companyName: "Durbin Labs Ltd.",
-      companyLogo: "https://durbinlabs.com/images/favicon.png"
+      companyLogo: "https://media.licdn.com/dms/image/C4D0BAQH7UK0KghPjAA/company-logo_100_100/0/1519888839489?e=1685577600&v=beta&t=fRziZeM01fZ8B9JZzoqo9QWWv5zT_T_72IrPM4jHNVM"
     }
   },
 ]
@@ -82,7 +82,7 @@ export const experiences = [
     ],
     position: "Senior Software Engineer",
     techStack: ["Golang", "Node.js", "TypeScript", "Nest.js", "Express.js", "WebSockets", "React.js", "MongoDB", "Redis", "Docker", "AWS", "NGINX"],
-    image: "https://durbinlabs.com/images/favicon.png"
+    image: "https://media.licdn.com/dms/image/C4D0BAQH7UK0KghPjAA/company-logo_100_100/0/1519888839489?e=1685577600&v=beta&t=fRziZeM01fZ8B9JZzoqo9QWWv5zT_T_72IrPM4jHNVM"
   },
   {
     companyName: "TigerIT Bangladesh Ltd.",
@@ -102,7 +102,7 @@ export const experiences = [
     ],
     position: "Software Engineer",
     techStack: ["Node.js", "Express.js", "WebSockets", "Vue.js", "MongoDB", "Redis", "React.js", "AWS", "NGINX"],
-    image: "https://durbinlabs.com/images/favicon.png"
+    image: "https://media.licdn.com/dms/image/C4D0BAQH7UK0KghPjAA/company-logo_100_100/0/1519888839489?e=1685577600&v=beta&t=fRziZeM01fZ8B9JZzoqo9QWWv5zT_T_72IrPM4jHNVM"
   },
 ]
 
@@ -117,3 +117,73 @@ export const about = {
   on different verticals including messaging, audio/video streaming, EdTech, HealthTech and so on.",
   opening: "I'm looking for a backend system development opportunity using Go/Node.js",
 }
+
+const issuer = {
+  coursera: {
+    NAME: "Coursera",
+    IMAGE: "https://media.licdn.com/dms/image/C4D0BAQGexnfBxeEG-g/company-logo_100_100/0/1608039227697?e=1685577600&v=beta&t=xCn94TYDxAf2LagkYwb5m_r5GS6W87D3asWc5MFvm48",
+  },
+  udemy: {
+    NAME: "Udemy",
+    IMAGE: "https://media.licdn.com/dms/image/C4D0BAQFQr9e68bBOPQ/company-logo_100_100/0/1626275253364?e=1685577600&v=beta&t=JXMAOg5CubQBVlGK0m4M4acDFEtkGpE6qkLDsFvHmNg",
+  },
+  mongodb: {
+    NAME: "MongoDB",
+    IMAGE: "https://media.licdn.com/dms/image/C4D0BAQFKe8PwqzyHyA/company-logo_100_100/0/1635171226731?e=1685577600&v=beta&t=iWfkxuEI1vx1EXAzm98biE8S_LSzAnN4xno3qeSNuGo",
+  },
+  kodekloud: {
+    NAME: "KodeKloud",
+    IMAGE: "https://media.licdn.com/dms/image/C4E0BAQFUctPVNz4kJQ/company-logo_100_100/0/1660624611717?e=1685577600&v=beta&t=__Hfse4fgn9wxPe1OwTM2C-LyuYL8NtbEgppBgzz-Zg",
+  }
+}
+
+export const moocs = [
+  {
+    title: "Programming with Google Go",
+    issuer: issuer.coursera.NAME,
+    issuerImage: issuer.coursera.IMAGE,
+    issueDate: "May 26, 2020",
+    certLink: "https://www.coursera.org/account/accomplishments/specialization/XKHMLX8S6NAZ",
+    skills: ["go"]
+  },
+  {
+    title: "Modern React with Redux [2023 Update]",
+    issuer: issuer.udemy.NAME,
+    issuerImage: issuer.udemy.IMAGE,
+    issueDate: "January 27, 2023",
+    certLink: "https://www.udemy.com/certificate/UC-d3139483-b945-4b7f-87d1-fe17a2b8e32f",
+    skills: ["react", "redux", "rtk-query", "javascript", "frontend"],
+  },
+  {
+    title: "Docker Training Course for the Absolute Beginner",
+    issuer: issuer.kodekloud.NAME,
+    issuerImage: issuer.kodekloud.IMAGE,
+    issueDate: "January 6, 2023",
+    certLink: "https://kodekloud.com/certificate-verification/2D0415206C6D-2D040F29A111-2D040EED5BC5",
+    skills: ["docker", "cloud", "devops"],
+  },
+  {
+    title: "MongoDB Indexes",
+    issuer: issuer.mongodb.NAME,
+    issuerImage: issuer.mongodb.IMAGE,
+    issueDate: "January 07, 2023",
+    certLink: "https://learn.mongodb.com/c/KQG2oWNtTG-lA6GCyA5dYA",
+    skills: ["mongodb", "database", "nosql"],
+  },
+  {
+    title: "MongoDB Atlas Search",
+    issuer: issuer.mongodb.NAME,
+    issuerImage: issuer.mongodb.IMAGE,
+    issueDate: "January 08, 2023",
+    certLink: "https://learn.mongodb.com/c/Aw9Tpvy3S3e2aR5ThpWcEQ",
+    skills: ["mongodb", "database", "nosql"],
+  },
+  {
+    title: "AWS Fundamentals: Going Cloud-Native",
+    issuer: issuer.coursera.NAME,
+    issuerImage: issuer.coursera.IMAGE,
+    issueDate: "April 17, 2021",
+    certLink: "https://www.coursera.org/account/accomplishments/specialization/XKHMLX8S6NAZ",
+    skills: ["aws", "cloud", "devops"],
+  },
+]

@@ -5,7 +5,7 @@ export default function ExperiencePage() {
   return (
     <div className="max-w-4xl mx-auto antialiased">
       <Head>
-        <title>Projects</title>
+        <title>Experience</title>
       </Head>
       <Experience />
     </div>

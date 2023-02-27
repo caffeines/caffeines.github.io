@@ -16,7 +16,7 @@ function ProjectDetails({project, id}) {
       return (
         <div className="flex items-center mt-4 space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <span className="flex items-center justify-center w-6 h-6 bg-white rounded-full -left-3 ring-4 ring-gray-200 dark:ring-gray-700 dark:bg-white">
-            <img className="rounded-full shadow-lg px-1 py-1" src={project?.associatedWith?.companyLogo} alt="" />
+            <img className="rounded-full shadow-lg p-px" src={project?.associatedWith?.companyLogo} alt="" />
           </span>
           <span>Associated with {project?.associatedWith?.companyName}</span>
         </div>
@@ -76,7 +76,7 @@ function ProjectDetails({project, id}) {
               </span>
             </div>
             <div className="ml-3 mt-8">
-              <h3 className="text-lg font-medium text-gray-900 dark:text-white">Tech Stack</h3>
+              <h3 className="text-lg font-medium text-gray-900 dark:text-white">Tech Stacks</h3>
               <ul className="mt-2 text-sm text-gray-500 dark:text-gray-400 flex flex-wrap p-1">
                 {project?.techStack?.map((tech, index) => {
                   return (

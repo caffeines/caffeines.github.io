@@ -47,6 +47,13 @@ const Nav = () => {
                         </a>
                     </Link>
                 </Navbar.Link>
+                <Navbar.Link>
+                    <Link href="/certifications">
+                        <a className={"font-medium tracking-wider transition-color hover:text-yellow-500"}>
+                            Certifications
+                        </a>
+                    </Link>
+                </Navbar.Link>
             </Navbar.Collapse>
         </Navbar>
     );
