@@ -4,7 +4,7 @@ export default function CertificationCard({ certification }) {
   const { title, issuer, issuerImage, issueDate, certLink } = certification;
   return (
     <>
-      <div className="sm:max-w-sm lg:max-w-md mt-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-neutral-900 dark:border-gray-700 transition ease-in-out delay-150 hover:border-dashed hover:bg-slate-100">
+      <div className="sm:max-w-sm lg:max-w-md mt-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-neutral-900 dark:border-gray-700 transition ease-in-out delay-150 hover:border-dashed hover:bg-slate-100">
         {/* <div className="bg-white rounded-lg shadow-lg dark:bg-gray-800"> */}
         <div className="p-4">
           <div className="flex items-center">

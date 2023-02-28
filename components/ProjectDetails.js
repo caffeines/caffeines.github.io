@@ -11,6 +11,7 @@ function ProjectDetails({project, id}) {
   const goBack = () => {
     Router.push('/projects');
   }
+
   const associatedWithView = () => {
     if (project?.associatedWith?.companyName) {
       return (
@@ -58,7 +59,7 @@ function ProjectDetails({project, id}) {
               <ul className="mt-2 text-sm text-gray-900 dark:text-gray-100">
                 {project?.workDescriptions?.map((desc, index) => {
                   return (
-                    <li key={index} className="ml-5 list-disc">
+                    <li key={index} className="ml-5 list-disc mt-2">
                       {desc}
                     </li>
                   )
