@@ -4,9 +4,21 @@ import Link from "next/link"
 import React from "react"
 import { useState } from 'react';
 import ThemeSwitch from "./Theme";
-import { Navbar, Button } from "flowbite-react";
+import { Navbar } from "flowbite-react";
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const Nav = () => {
+    const btnClass = "font-medium tracking-wider transition-color hover:font-bold";
+    const history = useRouter();
+
+    const getBtnCssClass = (path) => {
+        if (history.pathname === path) {
+            return btnClass + " text-white bg-gray-100 text-black dark:text-white dark:bg-slate-900 rounded-md px-3 py-2";
+        }
+        return btnClass;
+    }
+
     return (
         <Navbar
             fluid={true}
@@ -28,35 +40,35 @@ const Nav = () => {
             <Navbar.Collapse>
                 <Navbar.Link>
                     <Link href="/">
-                        <a className={"font-medium tracking-wider transition-color hover:text-yellow-500"}>
+                        <a className={getBtnCssClass("/")}>
                             Home
                         </a>
                     </Link>
                 </Navbar.Link>
                 <Navbar.Link>
                     <Link href="/experience">
-                        <a className={"font-medium tracking-wider transition-color hover:text-yellow-500"}>
+                        <a className={getBtnCssClass("/experience")}>
                             Experience
                         </a>
                     </Link>
                 </Navbar.Link>
                 <Navbar.Link>
                     <Link href="/skills">
-                        <a className={"font-medium tracking-wider transition-color hover:text-yellow-500"}>
+                        <a className={getBtnCssClass("/skills")}>
                             Skills
                         </a>
                     </Link>
                 </Navbar.Link>
                 <Navbar.Link>
                     <Link href="/projects">
-                        <a className={"font-medium tracking-wider transition-color hover:text-yellow-500"}>
+                        <a className={getBtnCssClass("/projects")}>
                             Projects
                         </a>
                     </Link>
                 </Navbar.Link>
                 <Navbar.Link>
                     <Link href="/certifications">
-                        <a className={"font-medium tracking-wider transition-color hover:text-yellow-500"}>
+                        <a className={getBtnCssClass("/certifications")}>
                             Certifications
                         </a>
                     </Link>

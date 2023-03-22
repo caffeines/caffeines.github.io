@@ -321,4 +321,14 @@ export const skills = [
     image: "https://raw.githubusercontent.com/github/explore/37c71fdca4e12086faf8c7009793d2eb588c914e/topics/nestjs/nestjs.png",
     exps: "1 year",
   },
+
 ]
+
+export const contacts = {
+  email: "mailto:sadat.talks@gmail.com",
+  github: "https://github.com/caffeines",
+  linkedin: "https://www.linkedin.com/in/sadatsayem/",
+  blog: "https://blog.sadat.me/",
+  youtube: "https://www.youtube.com/@prepself",
+
+}

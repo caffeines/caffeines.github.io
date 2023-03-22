@@ -24,7 +24,6 @@ const Skill = ({ skill }) => {
 
 export default function SkillPage() {
   const renderSkills = skills.map((skill, index) => {
-    console.log("skill: ", skill);
     return (
       <li key={index} className="flex justify-between items-center mb-2">
         <Skill skill={skill} />

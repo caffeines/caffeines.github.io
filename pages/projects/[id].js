@@ -11,7 +11,6 @@ export default function ProjectDetailsPage() {
 
   useEffect(() => {
     if (id) { setProject(projects[Number(id)]) }
-    console.log(projects[id]);
   }, [id]);
 
   return (

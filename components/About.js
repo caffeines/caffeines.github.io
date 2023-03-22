@@ -4,7 +4,8 @@ import profile from "../public/profile.jpeg"
 import { BiMailSend } from "react-icons/bi"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { ImBlog } from "react-icons/im"
-import { about } from "../configs"
+import { about, contacts } from "../configs"
+import { FiYoutube } from "react-icons/fi";
 
 const About = () => {
 	const handleContactClick = (link) => {
@@ -21,15 +22,25 @@ const About = () => {
 					</h1>
 					<div className="mt-6 text-gray-800 dark:text-white">
 						<div className="mb-4">
-							I&apos;m <b>{name}</b>, {jobDescription}
-							<a href={company.link} target="_blank" rel="noreferrer" className={"transition-colors hover:text-yellow-500 font-medium"}> { company.name}</a>
-							<br></br>
-							<br></br>
-							{description}
-							<br></br>
-							<br></br>
-							{opening}
+								I&apos;m <b>{name}</b>, {jobDescription}
+								<a href={company.link} target="_blank" rel="noreferrer" className={"transition-colors hover:text-yellow-500 font-medium"}> { company.name}</a>
+								<br></br>
+								<br></br>
+								{description}
+								<br></br>
+								<br></br>
+								{opening}
+						</div>
+						<div className="">
+							<div className="flex items-center justify-center lg:justify-start">
+								<button
+									className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-md"
+									onClick={() => handleContactClick(contacts.email)}>
+									<BiMailSend className="inline-block mr-1 text-2xl" />
+									<span className="inline-block">Contact me</span>
+								</button>
 							</div>
+						</div>
 						</div>
 					</div>
 					<div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
@@ -45,24 +56,24 @@ const About = () => {
 					<div className="mt-10 flex w-auto justify-center lg:justify-start">
 						<button
 							className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-md"
-							onClick={() => handleContactClick("https://github.com/caffeines")}>
+							onClick={() => handleContactClick(contacts.github)}>
 							<FaGithub className="inline-block mr-1 text-2xl" />
 						</button>
 						<button
 							className="ml-2 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-md"
-							onClick={() => handleContactClick("https://www.linkedin.com/in/sadatsayem/")}>
+							onClick={() => handleContactClick(contacts.linkedin)}>
 							<FaLinkedin className="inline-block mr-1 text-2xl" />
 						</button>
 						<button
 							className="ml-2 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-md"
-							onClick={() => handleContactClick("https://blog.sadat.me")}>
+							onClick={() => handleContactClick(contacts.blog)}>
 							<ImBlog className="inline-block mr-1 text-2xl" />
 						</button>
 						<button
 							className="ml-2 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-md"
-							onClick={() => handleContactClick("mailto:sadat.talks@gmail.com")}
+							onClick={() => handleContactClick(contacts.youtube)}
 						>
-							<BiMailSend className="inline-block mr-2 text-3xl" />
+							<FiYoutube className="inline-block text-3xl" />
 						</button>
 					</div>
 				</div>

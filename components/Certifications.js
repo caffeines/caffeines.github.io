@@ -7,6 +7,7 @@ export default function Certifications() {
   const renderedMoocs = moocs.map((certification, index) => (
     <CertificationCard key={index} id={index} certification={certification} />
   ));
+  
   return (
     <>
       <section className="px-4 mb-10 mt-20">
