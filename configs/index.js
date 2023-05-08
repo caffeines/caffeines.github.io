@@ -1,3 +1,18 @@
+import moment from 'moment';
+
+const openToWork = false;
+const jobStartDate = "2019-08-01";
+
+const years = moment(new Date()).diff(moment(jobStartDate, "YYYY-MM-DD"), 'years');
+const months = moment(new Date()).diff(moment(jobStartDate, "YYYY-MM-DD"), 'months') % 12;
+const exps = months ? `${years} years and ${months} months` : `${years} years`;
+
+const logo = {
+  "durbin": "https://media.licdn.com/dms/image/C4D0BAQH7UK0KghPjAA/company-logo_100_100/0/1519888839489?e=1685577600&v=beta&t=fRziZeM01fZ8B9JZzoqo9QWWv5zT_T_72IrPM4jHNVM",
+  "bKash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEVHcEzhE23iE27iE27iEm7iEm7iE27jEm3iE27iE27iE27iE27jE27iE27jEm/iE27jE27iE26QDA9KAAAAEnRSTlMADYXAlXRVN9D/4qFFZiryHLHH/asuAAAA2UlEQVR4AWKgBmAkpABQC10kQBDCQAAMQYYOwf7/2HVHblu4C1vnw7GZZiJuJCZWMxvPeHGJRho9ngIcjUpyuKsZCDRqweLGXUtDo8byOOGi04RRXIjHFdMMA7AON+26qbIW+pQeV7iQIADEQemTIAuuHjN7hxT60CTjyUfgGH/MCR4ko9IgM2vwnHoURMc06BmA2J44hxza+FuSKx5iOmhwgCNuqk9VacBIHRfRhev6Ubz9ZPUcCs0YQLy4orQQAATTaKkDcLTWIiBKawp02mEwbcVMW03pX843KwsY1vLgjQAAAABJRU5ErkJggg==",
+  "tigerIt": "https://tigerit.com/img/ti-logo.png",
+}
+
 export const projects = [
   {
     title: 'Doctor Dekhao',
@@ -21,7 +36,7 @@ export const projects = [
     link: 'https://doctordekhao.com.bd',
     associatedWith: {
       companyName: "Durbin Labs Ltd.",
-      companyLogo: "https://media.licdn.com/dms/image/C4D0BAQH7UK0KghPjAA/company-logo_100_100/0/1519888839489?e=1685577600&v=beta&t=fRziZeM01fZ8B9JZzoqo9QWWv5zT_T_72IrPM4jHNVM"
+      companyLogo: logo.durbin,
     }
   },
   {
@@ -38,7 +53,7 @@ export const projects = [
     link: 'https://commchat.com',
     associatedWith: {
       companyName: "TigerIT Bangladesh Ltd.",
-      companyLogo: "https://tigerit.com/img/ti-logo.png"
+      companyLogo: logo.tigerIt,
     }
   },
   {
@@ -67,22 +82,32 @@ export const projects = [
     link: 'https://retinalms.com',
     associatedWith: {
       companyName: "Durbin Labs Ltd.",
-      companyLogo: "https://media.licdn.com/dms/image/C4D0BAQH7UK0KghPjAA/company-logo_100_100/0/1519888839489?e=1685577600&v=beta&t=fRziZeM01fZ8B9JZzoqo9QWWv5zT_T_72IrPM4jHNVM"
+      companyLogo: logo.durbin,
     }
   },
 ]
 
 export const experiences = [
   {
-    companyName: "Durbin Labs Ltd.",
-    startDate: "June 2022", endDate: "Present",
+    companyName: "bKash Limited",
+    startDate: "June 2023", endDate: "Present",
     descriptions: [
       "Developing scalable Learning Management Systems and Telemedicine applications with cutting-edge technology",
-      "Leading web team in developing and maintaining web applications consisting of 4 developers."
     ],
     position: "Senior Software Engineer",
-    techStack: ["Golang", "Node.js", "TypeScript", "Nest.js", "Express.js", "WebSockets", "React.js", "MongoDB", "Redis", "Docker", "AWS", "NGINX"],
-    image: "https://media.licdn.com/dms/image/C4D0BAQH7UK0KghPjAA/company-logo_100_100/0/1519888839489?e=1685577600&v=beta&t=fRziZeM01fZ8B9JZzoqo9QWWv5zT_T_72IrPM4jHNVM"
+    techStack: ["Go", "React.js", "Redis", "Docker", "AWS", "NGINX"],
+    image: logo.bKash,
+  },
+  {
+    companyName: "Durbin Labs Ltd.",
+    startDate: "June 2022", endDate: "May 2023",
+    descriptions: [
+      "Developed scalable Learning Management Systems and Telemedicine applications with cutting-edge technology",
+      "Led a web team in developing and maintaining web applications consisting of 4 developers."
+    ],
+    position: "Senior Software Engineer",
+    techStack: ["Go", "Node.js", "TypeScript", "Nest.js", "Express.js", "WebSockets", "React.js", "MongoDB", "Redis", "Docker", "AWS", "NGINX"],
+    image: logo.durbin,
   },
   {
     companyName: "TigerIT Bangladesh Ltd.",
@@ -92,7 +117,7 @@ export const experiences = [
     ],
     position: "Software Engineer",
     techStack: ["Python", "Node.js", "Python-Flask", "MQTT", "React.js", "PostgreSQL", "Redis", "Celery", "Twilio", "VoIP"],
-    image: "https://tigerit.com/img/ti-logo.png"
+    image: logo.tigerIt,
   },
   {
     companyName: "Durbin Labs Ltd.",
@@ -102,7 +127,7 @@ export const experiences = [
     ],
     position: "Software Engineer",
     techStack: ["Node.js", "Express.js", "WebSockets", "Vue.js", "MongoDB", "Redis", "React.js", "AWS", "NGINX"],
-    image: "https://media.licdn.com/dms/image/C4D0BAQH7UK0KghPjAA/company-logo_100_100/0/1519888839489?e=1685577600&v=beta&t=fRziZeM01fZ8B9JZzoqo9QWWv5zT_T_72IrPM4jHNVM"
+    image: logo.durbin,
   },
 ]
 
@@ -110,12 +135,11 @@ export const about = {
   name: "Abu Sadat Md. Sayem",
   jobDescription: "a software developer from Bangladesh. Currently working as a Senior Software Engineer at",
   company: {
-    name: "Durbin Labs Ltd.",
-    link: "https://durbinlabs.com",
+    name: "bKash Limited",
+    link: "https://www.bkash.com",
   },
-  description: "I have over 3.5 years of scalable software design and development experience. In this time I have developed applications \
-  on different verticals including messaging, audio/video streaming, EdTech, HealthTech and so on.",
-  opening: "I'm looking for a backend system development opportunity using Go/Node.js",
+  description: `I have ${exps} of scalable software design and development experience. During this time, I have developed applications on different verticals including messaging, audio/video streaming, EdTech, HealthTech and so on.`,
+  opening: openToWork ? "I'm looking for a backend system development opportunity using Go/Node.js" : "",
 }
 
 const issuer = {

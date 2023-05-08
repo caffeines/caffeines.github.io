@@ -23,7 +23,7 @@ const About = () => {
 					<div className="mt-6 text-gray-800 dark:text-white">
 						<div className="mb-4">
 								I&apos;m <b>{name}</b>, {jobDescription}
-								<a href={company.link} target="_blank" rel="noreferrer" className={"transition-colors hover:text-yellow-500 font-medium"}> { company.name}</a>
+								<a href={company.link} target="_blank" rel="noreferrer" className={"transition-colors hover:text-pink-500 font-medium"}> { company.name}</a>
 								<br></br>
 								<br></br>
 								{description}
