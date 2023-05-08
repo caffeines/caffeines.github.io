@@ -2,10 +2,8 @@
 
 import Link from "next/link"
 import React from "react"
-import { useState } from 'react';
 import ThemeSwitch from "./Theme";
 import { Navbar } from "flowbite-react";
-import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 const Nav = () => {
