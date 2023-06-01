@@ -8,7 +8,7 @@ const months = moment(new Date()).diff(moment(jobStartDate, "YYYY-MM-DD"), 'mont
 const exps = months ? `${years} years and ${months} months` : `${years} years`;
 
 const logo = {
-  "durbin": "https://media.licdn.com/dms/image/C4D0BAQH7UK0KghPjAA/company-logo_100_100/0/1519888839489?e=1685577600&v=beta&t=fRziZeM01fZ8B9JZzoqo9QWWv5zT_T_72IrPM4jHNVM",
+  "durbin": "https://durbinlabs.com/images/favicon.png",
   "bKash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEVHcEzhE23iE27iE27iEm7iEm7iE27jEm3iE27iE27iE27iE27jE27iE27jEm/iE27jE27iE26QDA9KAAAAEnRSTlMADYXAlXRVN9D/4qFFZiryHLHH/asuAAAA2UlEQVR4AWKgBmAkpABQC10kQBDCQAAMQYYOwf7/2HVHblu4C1vnw7GZZiJuJCZWMxvPeHGJRho9ngIcjUpyuKsZCDRqweLGXUtDo8byOOGi04RRXIjHFdMMA7AON+26qbIW+pQeV7iQIADEQemTIAuuHjN7hxT60CTjyUfgGH/MCR4ko9IgM2vwnHoURMc06BmA2J44hxza+FuSKx5iOmhwgCNuqk9VacBIHRfRhev6Ubz9ZPUcCs0YQLy4orQQAATTaKkDcLTWIiBKawp02mEwbcVMW03pX843KwsY1vLgjQAAAABJRU5ErkJggg==",
   "tigerIt": "https://tigerit.com/img/ti-logo.png",
 }
@@ -22,14 +22,13 @@ export const projects = [
       'Designed and developed REST APIs for a scalable and secure system using TypeScript and Nest.js.',
       'Implemented a real- time communication system using WebSockets, VoIP Push, and FCM(Firebase Cloud Messaging) for seamless and fast data exchange between the client and server.',
       'Implemented data storage solutions using MongoDB and Redis for high performance and quick retrieval of data.',
-      'Worked on scalable system design and implemented horizontal scaling using load - balancing techniques.',
-      'Collaborated with front - end developers to integrate APIs with the user interface',
+      'Worked on scalable system design and implemented horizontal scaling using load-balancing techniques.',
+      'Collaborated with front-end developers to integrate APIs with the user interface',
       'Designed and implemented security features such as encryption, authentication, and authorization to ensure the protection of sensitive data',
-      'Integrated payment gateway.',
       'Developed a video calling feature using Zoom Video SDK.',
       'Developed a notification system using WebSocket and FCM.',
-      'Developed an online payment system using Stripe.',
-      'Developed a dashboard for admin, doctors and patients.',
+      'Developed an online payment system using PortWallet.',
+      'Developed analytics APIs for admin, doctors and patients',
       'Developed a system for doctors to manage their appointments, patients, prescriptions.',
     ],
     techStack: ['Node.js', 'TypeScript', 'Nest.js', 'MongoDB', 'Redis', 'WebSockets', 'EC2', 'S3', 'CloudFront', 'Docker'],
@@ -74,7 +73,8 @@ export const projects = [
     description: 'An admission coaching-centric scalable learning management system.',
     longDescription: 'RetinaLMS is a scalable learning management system, with admission, online payment, book distribution, and an online exam system.',
     workDescriptions: [
-      'I have developed the entire backend system, maintained this project, and worked on new features.',
+      'Developed the entire backend system, maintained this project, and worked on new features.',
+      'Developed online exam taking solution with realtime leaderboard using Redis ZSET',
       'Integrated bKash payment gateway.',
       'Monitored and optimized system performance to ensure the high availability of the application.',
     ],
@@ -92,10 +92,10 @@ export const experiences = [
     companyName: "bKash Limited",
     startDate: "June 2023", endDate: "Present",
     descriptions: [
-      "Developing scalable Learning Management Systems and Telemedicine applications with cutting-edge technology",
+
     ],
-    position: "Senior Software Engineer",
-    techStack: ["Go", "React.js", "Redis", "Docker", "AWS", "NGINX"],
+    position: "Senior Engineer, Software Development, Software Research & Engineering",
+    techStack: [],
     image: logo.bKash,
   },
   {
