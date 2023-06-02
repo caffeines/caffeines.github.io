@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="flex flex-wrap pt-2 sm:space-x-4 space-x-2 font-medium lg:pt-0">
                         <a
                             href="https://www.linkedin.com/in/sadatsayem/"
-                            className={"transition-colors hover:text-yellow-500"}
+                            className={"transition-colors text-gray-300 hover:text-white hover:bg-gray-200 px-2 py-1 hover:dark:bg-gray-800 hover:dark:text-gray-300 hover:rounded-sm"}
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -19,7 +19,7 @@ const Footer = () => {
                         </a>
                         <a
                             href="https://github.com/caffeines"
-                            className={"transition-colors hover:text-yellow-500"}
+                            className={"transition-colors text-gray-300 hover:text-white hover:bg-gray-200 px-2 py-1 hover:dark:bg-gray-800 hover:dark:text-gray-300 hover:rounded-sm"}
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -27,7 +27,7 @@ const Footer = () => {
                         </a>
                         <a
                             href="https://blog.sadat.me"
-                            className={"transition-colors hover:text-yellow-500"}
+                            className={"transition-colors text-gray-300 hover:text-white hover:bg-gray-200 px-2 py-1 hover:dark:bg-gray-800 hover:dark:text-gray-300 hover:rounded-sm"}
                             target="_blank"
                             rel="noreferrer"
                         >
