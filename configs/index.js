@@ -1,5 +1,8 @@
 import moment from 'moment';
 
+// Certificate issuer pictures
+import coursera from '../public/coursera.jpeg';
+
 const openToWork = false;
 const jobStartDate = "2019-08-01";
 
@@ -145,19 +148,19 @@ export const about = {
 const issuer = {
   coursera: {
     NAME: "Coursera",
-    IMAGE: "https://media.licdn.com/dms/image/C4D0BAQGexnfBxeEG-g/company-logo_100_100/0/1608039227697?e=1685577600&v=beta&t=xCn94TYDxAf2LagkYwb5m_r5GS6W87D3asWc5MFvm48",
+    IMAGE: "/coursera.jpeg",
   },
   udemy: {
     NAME: "Udemy",
-    IMAGE: "https://media.licdn.com/dms/image/C4D0BAQFQr9e68bBOPQ/company-logo_100_100/0/1626275253364?e=1685577600&v=beta&t=JXMAOg5CubQBVlGK0m4M4acDFEtkGpE6qkLDsFvHmNg",
+    IMAGE: "/udemy.png",
   },
   mongodb: {
     NAME: "MongoDB",
-    IMAGE: "https://media.licdn.com/dms/image/C4D0BAQFKe8PwqzyHyA/company-logo_100_100/0/1635171226731?e=1685577600&v=beta&t=iWfkxuEI1vx1EXAzm98biE8S_LSzAnN4xno3qeSNuGo",
+    IMAGE: "/mongodb.png",
   },
   kodekloud: {
     NAME: "KodeKloud",
-    IMAGE: "https://media.licdn.com/dms/image/C4E0BAQFUctPVNz4kJQ/company-logo_100_100/0/1660624611717?e=1685577600&v=beta&t=__Hfse4fgn9wxPe1OwTM2C-LyuYL8NtbEgppBgzz-Zg",
+    IMAGE: "/kodekloud.jpeg",
   }
 }
 
