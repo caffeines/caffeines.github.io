@@ -95,10 +95,9 @@ export const experiences = [
     companyName: "bKash Limited",
     startDate: "June 2023", endDate: "Present",
     descriptions: [
-
     ],
     position: "Senior Engineer, Software Development, Software Research & Engineering",
-    techStack: [],
+    techStack: ["Java", "Spring Boot", "DynamoDB", "Redis", "Maven"],
     image: logo.bKash,
   },
   {
