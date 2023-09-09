@@ -11,7 +11,7 @@ const months = moment(new Date()).diff(moment(jobStartDate, "YYYY-MM-DD"), 'mont
 const exps = months ? `${years} years and ${months} months` : `${years} years`;
 
 const logo = {
-  "durbin": "https://durbinlabs.com/images/favicon.png",
+  "durbin": "https://lh3.googleusercontent.com/-yEowhXKxqLc/AAAAAAAAAAI/AAAAAAAAAAA/SZAeJPynxmc/s44-w44-h44-p-k-no-ns-nd/photo.jpg",
   "bKash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEVHcEzhE23iE27iE27iEm7iEm7iE27jEm3iE27iE27iE27iE27jE27iE27jEm/iE27jE27iE26QDA9KAAAAEnRSTlMADYXAlXRVN9D/4qFFZiryHLHH/asuAAAA2UlEQVR4AWKgBmAkpABQC10kQBDCQAAMQYYOwf7/2HVHblu4C1vnw7GZZiJuJCZWMxvPeHGJRho9ngIcjUpyuKsZCDRqweLGXUtDo8byOOGi04RRXIjHFdMMA7AON+26qbIW+pQeV7iQIADEQemTIAuuHjN7hxT60CTjyUfgGH/MCR4ko9IgM2vwnHoURMc06BmA2J44hxza+FuSKx5iOmhwgCNuqk9VacBIHRfRhev6Ubz9ZPUcCs0YQLy4orQQAATTaKkDcLTWIiBKawp02mEwbcVMW03pX843KwsY1vLgjQAAAABJRU5ErkJggg==",
   "tigerIt": "https://tigerit.com/img/ti-logo.png",
 }
