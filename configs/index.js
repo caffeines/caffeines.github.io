@@ -18,9 +18,9 @@ const logo = {
 
 export const projects = [
   {
-    title: 'Doctor Dekhao',
-    description: 'Doctor Dekhao is a telemedicine platform that connects patients with doctors.',
-    longDescription: 'Doctor Dekhao is a telemedicine platform that connects patients with doctors. Patients can book appointments with doctors and get a consultation from anywhere. Doctors can manage their appointments, patients, and prescriptions.',
+    title: 'eDoktor',
+    description: 'eDoktor is a telemedicine platform that connects patients with doctors',
+    longDescription: 'eDoktor is a telemedicine platform that connects patients with doctors. Patients can book appointments with doctors and get a consultation from anywhere. Doctors can manage their appointments, patients, and prescriptions.',
     workDescriptions: [
       'Designed and developed REST APIs for a scalable and secure system using TypeScript and Nest.js.',
       'Implemented a real- time communication system using WebSockets, VoIP Push, and FCM(Firebase Cloud Messaging) for seamless and fast data exchange between the client and server.',
@@ -35,7 +35,7 @@ export const projects = [
       'Developed a system for doctors to manage their appointments, patients, prescriptions.',
     ],
     techStack: ['Node.js', 'TypeScript', 'Nest.js', 'MongoDB', 'Redis', 'WebSockets', 'EC2', 'S3', 'CloudFront', 'Docker'],
-    link: 'https://doctordekhao.com.bd',
+    link: 'https://edoktor.rs',
     associatedWith: {
       companyName: "Durbin Labs Ltd.",
       companyLogo: logo.durbin,
@@ -95,9 +95,10 @@ export const experiences = [
     companyName: "bKash Limited",
     startDate: "June 2023", endDate: "Present",
     descriptions: [
+      "Working on secure backend solutions to support bKash's Visa Add Money feature, designed for scalability.",
     ],
-    position: "Senior Engineer, Software Development, Software Research & Engineering",
-    techStack: ["Java", "Spring Boot", "DynamoDB", "Redis", "Maven"],
+    position: "Senior Engineer, Software Development, Research & Engineering",
+    techStack: ["Java", "Spring Boot", "DynamoDB", "Redis", "Maven", "Docker"],
     image: logo.bKash,
   },
   {
