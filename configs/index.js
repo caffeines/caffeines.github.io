@@ -8,10 +8,10 @@ const jobStartDate = "2019-08-01";
 
 const years = moment(new Date()).diff(moment(jobStartDate, "YYYY-MM-DD"), 'years');
 const months = moment(new Date()).diff(moment(jobStartDate, "YYYY-MM-DD"), 'months') % 12;
-const exps = months ? `${years} years and ${months} months` : `${years} years`;
+const exps = months > 5 ? `${years}.5+ years` : `${years}+ years`;
 
 const logo = {
-  "durbin": "https://lh3.googleusercontent.com/-yEowhXKxqLc/AAAAAAAAAAI/AAAAAAAAAAA/SZAeJPynxmc/s44-w44-h44-p-k-no-ns-nd/photo.jpg",
+  "durbin": "https://ik.imagekit.io/durbinlms/durbinLogo_Ntbw6oDv8.png?updatedAt=1697138982542",
   "bKash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEVHcEzhE23iE27iE27iEm7iEm7iE27jEm3iE27iE27iE27iE27jE27iE27jEm/iE27jE27iE26QDA9KAAAAEnRSTlMADYXAlXRVN9D/4qFFZiryHLHH/asuAAAA2UlEQVR4AWKgBmAkpABQC10kQBDCQAAMQYYOwf7/2HVHblu4C1vnw7GZZiJuJCZWMxvPeHGJRho9ngIcjUpyuKsZCDRqweLGXUtDo8byOOGi04RRXIjHFdMMA7AON+26qbIW+pQeV7iQIADEQemTIAuuHjN7hxT60CTjyUfgGH/MCR4ko9IgM2vwnHoURMc06BmA2J44hxza+FuSKx5iOmhwgCNuqk9VacBIHRfRhev6Ubz9ZPUcCs0YQLy4orQQAATTaKkDcLTWIiBKawp02mEwbcVMW03pX843KwsY1vLgjQAAAABJRU5ErkJggg==",
   "tigerIt": "https://tigerit.com/img/ti-logo.png",
 }
@@ -141,7 +141,7 @@ export const about = {
     name: "bKash Limited",
     link: "https://www.bkash.com",
   },
-  description: `I have ${exps} of scalable software design and development experience. During this time, I have developed applications on different verticals including messaging, audio/video streaming, EdTech, HealthTech and so on.`,
+  description: `I have ${exps} of scalable software design and development experience. During this time, I have developed applications on different verticals including Fintech, Messaging, Audio/Video streaming, EdTech, HealthTech and so on.`,
   opening: openToWork ? "I'm looking for a backend system development opportunity using Go/Node.js" : "",
 }
 
@@ -220,7 +220,7 @@ export const skills = [
     name: "Go",
     level: "expert",
     image: "https://miro.medium.com/max/600/1*i2skbfmDsHayHhqPfwt6pA.png",
-    exps: "2 years",
+    exps: "3 years",
   },
   {
     name: "AWS",
@@ -261,7 +261,7 @@ export const skills = [
   {
     name: "Problem Solving",
     level: "expert",
-    image: "https://fullpotentialgroup.com/wp-content/uploads/2020/01/Problem-solving-RS2-750x675.jpg",
+    image: "https://ik.imagekit.io/durbinlms/9b6ecc_7de29236425e48a5aaa218d8333f47f1~mv2_ddrwU5kkf.jpg?updatedAt=1697138982659",
     exps: "700+ solved",
   },
   {
