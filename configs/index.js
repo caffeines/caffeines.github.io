@@ -210,7 +210,7 @@ export const moocs = [
     issuer: issuer.coursera.NAME,
     issuerImage: issuer.coursera.IMAGE,
     issueDate: "April 17, 2021",
-    certLink: "https://www.coursera.org/account/accomplishments/specialization/XKHMLX8S6NAZ",
+    certLink: "https://coursera.org/share/21ee62d525f77eebc431599978ee539d",
     skills: ["aws", "cloud", "devops"],
   },
 ]
