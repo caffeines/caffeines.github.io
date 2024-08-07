@@ -49,7 +49,7 @@ const About = () => {
 								src={profile}
 								alt="Profile"
 								priority={true}
-								className="rounded-md hover:scale-150 transition-all duration-500 ease-in-out transform:hover"
+								className="rounded-lg"
 								width={270}
 								height={270}
 								placeholder="blur"

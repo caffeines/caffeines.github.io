@@ -7,7 +7,7 @@ import { Navbar } from "flowbite-react";
 import { useRouter } from 'next/router';
 
 const Nav = () => {
-    const btnClass = "font-medium tracking-wider transition-color hover:font-bold";
+    const btnClass = "font-medium tracking-wider transition-color hover:font-bold text-gray-600 dark:text-gray-200 hover:text-gray-900 uppercase dark:hover:text-white";
     const history = useRouter();
 
     const getBtnCssClass = (path) => {
@@ -27,7 +27,7 @@ const Nav = () => {
             <Navbar.Brand>
                 <Link href="/">
                     <a className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-                        Sadat Sayem
+                        SADAT SAYEM
                     </a>
                 </Link>
             </Navbar.Brand>
