@@ -1,6 +1,8 @@
 import React from "react";
+import {contacts} from "../configs";
 
 const Footer = () => {
+    const {linkedin, github, blog} = contacts;
     const currentYear = new Date().getFullYear();
     return (
         <div className="mt-12 lg:mt-18 sm:pb-36 sm:py-12 py-6">
@@ -10,7 +12,7 @@ const Footer = () => {
                     <p>© {currentYear} Abu Sadat Md. Sayem. All Rights Reserved.</p>
                     <div className="flex flex-wrap pt-2 sm:space-x-4 space-x-2 font-medium lg:pt-0">
                         <a
-                            href="https://www.linkedin.com/in/sadatsayem/"
+                            href={linkedin}
                             className={"transition-colors text-gray-800 hover:text-gray-900 dark:gray-800 dark:text-gray-300 hover:bg-gray-200 px-2 py-1 hover:dark:bg-gray-800 hover:dark:text-gray-300 hover:rounded-sm"}
                             target="_blank"
                             rel="noreferrer"
@@ -18,7 +20,7 @@ const Footer = () => {
                             LinkedIn
                         </a>
                         <a
-                            href="https://github.com/caffeines"
+                            href={github}
                             className={"transition-colors text-gray-800 hover:text-gray-900 dark:gray-800 dark:text-gray-300 hover:bg-gray-200 px-2 py-1 hover:dark:bg-gray-800 hover:dark:text-gray-300 hover:rounded-sm"}
                             target="_blank"
                             rel="noreferrer"
@@ -26,7 +28,7 @@ const Footer = () => {
                             GitHub
                         </a>
                         <a
-                            href="https://blog.sadat.me"
+                            href={blog}
                             className={"transition-colors text-gray-800 hover:text-gray-900 dark:gray-800 dark:text-gray-300 hover:bg-gray-200 px-2 py-1 hover:dark:bg-gray-800 hover:dark:text-gray-300 hover:rounded-sm"}
                             target="_blank"
                             rel="noreferrer"
