@@ -355,7 +355,6 @@ export const contacts = {
   email: "mailto:sadat.talks@gmail.com",
   github: "https://github.com/caffeines",
   linkedin: "https://www.linkedin.com/in/sadatsayem/",
-  blog: "https://blog.sadat.me/",
+  blog: "https://caffeines.medium.com",
   youtube: "https://www.youtube.com/@prepself",
-
 }
