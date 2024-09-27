@@ -358,3 +358,30 @@ export const contacts = {
   blog: "https://caffeines.medium.com",
   youtube: "https://www.youtube.com/@prepself",
 }
+
+export const articles = [
+  {
+    title: "Automatically Backup a MongoDB Database to DropBox using Github action",
+    publishedDate: "30-04-2021",
+    readTime: 5,
+    tags: ["Database", "MongoDB", "Github Action", "DropBox"],
+    shortInfo: "Learn how to automatically backup a MongoDB database to DropBox using Github action.",
+    url: "https://medium.com/@caffeines/automatically-backup-a-mongodb-database-to-dropbox-using-github-action-4a7bba3be470"
+  },
+  {
+    title: "Understanding CPU Latency",
+    publishedDate: "28-09-2024",
+    readTime: 2,
+    tags: ["CPU", "Latency", "System Design", "Performance"],
+    shortInfo: "CPU latency refers to the time it takes for a processor to handle a specific task or instruction. Let's understand the causes and effects of CPU latency.",
+    url: "https://medium.com/@caffeines/understanding-cpu-latency-2bfb6d4a01bd"
+  },
+  {
+    title: "Understanding Locking: Pessimistic and Optimistic Approaches",
+    publishedDate: "09-09-2024",
+    readTime: 5,
+    tags: ["Database", "Locking", "Concurrency", "System Design", "Performance"],
+    shortInfo: "Learn about different types of locking mechanisms and how they work in database systems.",
+    url: "https://medium.com/@caffeines/understanding-locking-pessimistic-and-optimistic-approaches-7540ea7d7181"
+  }
+];

@@ -37,13 +37,6 @@ const Nav = () => {
             </div>
             <Navbar.Collapse>
                 <Navbar.Link>
-                    <Link href="/">
-                        <a className={getBtnCssClass("/")}>
-                            Home
-                        </a>
-                    </Link>
-                </Navbar.Link>
-                <Navbar.Link>
                     <Link href="/experience">
                         <a className={getBtnCssClass("/experience")}>
                             Experience
@@ -68,6 +61,13 @@ const Nav = () => {
                     <Link href="/certifications">
                         <a className={getBtnCssClass("/certifications")}>
                             Certifications
+                        </a>
+                    </Link>
+                </Navbar.Link>
+                <Navbar.Link>
+                    <Link href="/articles">
+                        <a className={getBtnCssClass("/articles")}>
+                            Articles
                         </a>
                     </Link>
                 </Navbar.Link>
