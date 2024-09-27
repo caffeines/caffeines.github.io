@@ -9,17 +9,17 @@ const ArticleCard = ({ title, publishedDate, readTime, tags, shortInfo, url }) =
   onClick={() => window.open(url)}
   className="bg-white border border-gray-200 rounded-lg shadow dark:bg-neutral-900 dark:border-gray-700 transition ease-in-out delay-150 hover:border-dashed hover:dark:bg-black hover:bg-slate-100 p-6 mb-6 flex flex-col justify-between cursor-pointer">
     <div>
-      <h2 className="text-2xl font-bold text-white mb-2">{title}</h2>
-      <div className="flex items-center text-sm text-gray-400 mb-4">
+      <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">{title}</h2>
+      <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-4">
         <span>{moment(publishedDate, "DD-MM-YYYY").format("MMMM D, YYYY")}</span>
         <span className="mx-2">•</span>
         <span>{readTime} min read</span>
       </div>
-      <p className="text-gray-300">{shortInfo}</p>
+      <p className="text-gray-600 dark:text-gray-300">{shortInfo}</p>
     </div>
       <div className="mt-6">
         {tags.map((tag, index) => (
-          <span key={index} className="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2">
+          <span key={index} className="inline-block bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-300 mr-2 mb-2">
             {tag}
           </span>
         ))}
@@ -90,11 +90,11 @@ const Articles = () => {
 
   return (
     <div className="container px-4 mx-auto">
-      <h1 className="text-3xl font-bold text-white mb-8">Articles</h1>
+      <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">Articles</h1>
       <div className="mb-6">
         <button
           onClick={() => setSelectedTag("All")}
-          className={`mr-2 mb-2 px-3 py-1 rounded-full ${selectedTag === "All" ? "bg-black-600 text-white outline outline-gray-600" : "bg-gray-700 text-gray-300"}`}
+          className={`mr-2 mb-2 px-3 py-1 rounded-full ${selectedTag === "All" ? "bg-gray-800 dark:bg-black-600 text-white outline outline-gray-600" : "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300"}`}
         >
           All
         </button>
@@ -102,7 +102,7 @@ const Articles = () => {
           <button
             key={tag.name}
             onClick={() => setSelectedTag(tag.name)}
-            className={`mr-2 mb-2 px-3 py-1 rounded-full ${selectedTag === tag.name ? "bg-black-600 text-white outline outline-gray-600" : "bg-gray-700 text-gray-300"}`}
+            className={`mr-2 mb-2 px-3 py-1 rounded-full ${selectedTag === tag.name ? "bg-gray-800 dark:bg-black-600 text-white outline outline-gray-600" : "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300"}`}
           >
             {tag.name} ({tag.count})
           </button>
@@ -110,7 +110,7 @@ const Articles = () => {
         {sortedTags.length > MAX_TAGS && (
           <button
             onClick={() => setShowModal(true)}
-            className="mr-2 mb-2 px-3 py-1 rounded-full bg-gray-700 text-gray-300"
+            className="mr-2 mb-2 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
           >
             Show More
           </button>
