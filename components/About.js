@@ -46,14 +46,14 @@ const About = () => {
 					</div>
 					<div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
 						<Image
-								src={profile}
-								alt="Profile"
-								priority={true}
-								className="rounded-lg"
-								width={270}
-								height={270}
-								placeholder="blur"
-					/>
+						src={profile}
+						alt="Profile"
+						priority={true}
+						className="rounded-lg"
+						width={270}
+						height={270}
+						placeholder="blur"
+						/>
 					<div className="mt-10 flex w-auto justify-center lg:justify-start">
 						<button
 							className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-md"

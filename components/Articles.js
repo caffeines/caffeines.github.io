@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { articles } from "../configs";
 import moment from "moment";
-import { Link } from 'next/link';
+
 const MAX_TAGS = 9;
 
 const ArticleCard = ({ title, publishedDate, readTime, tags, shortInfo, url }) => (
