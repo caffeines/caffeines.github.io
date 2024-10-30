@@ -366,7 +366,7 @@ export const articles = [
     readTime: 5,
     tags: ["Database", "MongoDB", "Github Action", "DropBox"],
     shortInfo: "Learn how to automatically backup a MongoDB database to DropBox using Github action.",
-    url: "https://medium.com/@caffeines/automatically-backup-a-mongodb-database-to-dropbox-using-github-action-4a7bba3be470"
+    url: "https://caffeines.medium.com/automatically-backup-a-mongodb-database-to-dropbox-using-github-action-4a7bba3be470?source=friends_link&sk=e1c040d8c15be05aa4084f672d15861d"
   },
   {
     title: "Understanding CPU Latency",
@@ -374,7 +374,7 @@ export const articles = [
     readTime: 2,
     tags: ["CPU", "Latency", "System Design", "Performance"],
     shortInfo: "CPU latency refers to the time it takes for a processor to handle a specific task or instruction. Let's understand the causes and effects of CPU latency.",
-    url: "https://medium.com/@caffeines/understanding-cpu-latency-2bfb6d4a01bd"
+    url: "https://caffeines.medium.com/understanding-cpu-latency-2bfb6d4a01bd?source=friends_link&sk=e9c65e92be88e60df1106b746775b633"
   },
   {
     title: "Understanding Locking: Pessimistic and Optimistic Approaches",
@@ -382,6 +382,14 @@ export const articles = [
     readTime: 5,
     tags: ["Database", "Locking", "Concurrency", "System Design", "Performance"],
     shortInfo: "Learn about different types of locking mechanisms and how they work in database systems.",
-    url: "https://medium.com/@caffeines/understanding-locking-pessimistic-and-optimistic-approaches-7540ea7d7181"
+    url: "https://caffeines.medium.com/understanding-locking-pessimistic-and-optimistic-approaches-7540ea7d7181?source=friends_link&sk=5f606e385904dc6855bcb175e8868faf"
+  },
+  {
+    title: "Git Worktrees: A Powerful Feature for Managing Multiple Working Directories",
+    publishedDate: "30-10-2024",
+    readTime: 4,
+    tags: ["Git", "Github"],
+    shortInfo: "Discover how to effectively work with Git Worktree and maximize its features",
+    url: "https://caffeines.medium.com/git-worktrees-a-powerful-feature-for-managing-multiple-working-directories-4b62b0172edc?source=friends_link&sk=399ddee5cacbae1e4f2746a19a6bf202"
   }
 ];
