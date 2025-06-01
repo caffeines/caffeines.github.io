@@ -1,6 +1,8 @@
 baseURL: "https://sadat.me/blogs/"
 title: caffeines
 theme: PaperMod
+canonifyURLs: true
+relativeURLs: false
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
