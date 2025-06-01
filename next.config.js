@@ -4,6 +4,12 @@ module.exports = {
     loader: 'imgix',
     path: 'https://caffeines.github.io',
   },
-  // basePath: '/sadat.me',
-  // assetsPrefix: ''
+  async rewrites() {
+    return [
+      {
+        source: '/blogs/:path*',
+        destination: '/blogs/:path*',
+      },
+    ];
+  },
 }
