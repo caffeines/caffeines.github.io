@@ -2,34 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sadat.me:1313/</loc>
+    <loc>http://localhost:1313/blogs/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadat.me:1313/categories/</loc>
+    <loc>http://localhost:1313/blogs/categories/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadat.me:1313/categories/git/</loc>
+    <loc>http://localhost:1313/blogs/categories/git/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadat.me:1313/series/git/</loc>
+    <loc>http://localhost:1313/blogs/series/git/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadat.me:1313/tags/git/</loc>
+    <loc>http://localhost:1313/blogs/tags/git/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadat.me:1313/posts/git/worktree/</loc>
+    <loc>http://localhost:1313/blogs/posts/git/worktree/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadat.me:1313/posts/</loc>
+    <loc>http://localhost:1313/blogs/posts/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadat.me:1313/tags/productivity/</loc>
+    <loc>http://localhost:1313/blogs/tags/productivity/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadat.me:1313/series/</loc>
+    <loc>http://localhost:1313/blogs/series/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadat.me:1313/tags/</loc>
+    <loc>http://localhost:1313/blogs/tags/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
 </urlset>
