@@ -39,6 +39,19 @@ jobs:
       
     - run: yarn export
     - run: touch ./out/.nojekyll
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.110.0'
+        extended: true
+
+    - name: Build Hugo site
+      run: |
+        cd blogs
+        hugo --minify
+        mkdir -p ../out/blogs
+        cp -r public/* ../out/blogs/
     
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.2.3
