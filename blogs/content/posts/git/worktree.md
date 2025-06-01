@@ -9,7 +9,7 @@ series: ["Git"]
 aliases: ["git worktrees"]
 cover:
   image: images/worktree.png
-  caption: "Generated using [OG Image Playground by Vercel](https://og-playground.vercel.app/)"
+  caption: "Git Worktrees: A Powerful Feature for Managing Multiple Working Directories"
 ShowToc: true
 TocOpen: true
 ---
