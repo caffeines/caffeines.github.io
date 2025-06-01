@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on caffeines</title>
-    <link>https://sadat.me/blogs/categories/git/</link>
+    <link>https://www.sadat.me/blogs/categories/git/</link>
     <description>Recent content in Git on caffeines</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sadat.me/blogs/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sadat.me/blogs/categories/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Worktrees</title>
-      <link>https://sadat.me/blogs/posts/git/worktree/</link>
+      <link>https://www.sadat.me/blogs/posts/git/worktree/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sadat.me/blogs/posts/git/worktree/</guid>
+      <guid>https://www.sadat.me/blogs/posts/git/worktree/</guid>
       <description>Git Worktrees: A Powerful Feature for Managing Multiple Working Directories Git worktrees are one of the most underutilized yet powerful features in Git. They allow us to maintain multiple working directories from a single Git repository, each with its own branch checked out. In this blog post, we’ll explore what worktrees are, their benefits, and how to effectively use them in your development workflow.
 What is a Git Worktree? A Git worktree is an additional working directory linked to our main repository.</description>
     </item>

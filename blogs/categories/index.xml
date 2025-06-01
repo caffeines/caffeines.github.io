@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on caffeines</title>
-    <link>https://sadat.me/blogs/categories/</link>
+    <link>https://www.sadat.me/blogs/categories/</link>
     <description>Recent content in Categories on caffeines</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sadat.me/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sadat.me/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git</title>
-      <link>https://sadat.me/blogs/categories/git/</link>
+      <link>https://www.sadat.me/blogs/categories/git/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sadat.me/blogs/categories/git/</guid>
+      <guid>https://www.sadat.me/blogs/categories/git/</guid>
       <description></description>
     </item>
     
