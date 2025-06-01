@@ -52,7 +52,7 @@ jobs:
           cd blogs
           rm -rf public/
           rm -rf resources/
-          hugo --minify --environment production --baseURL="https://sadat.me/blogs/" --cleanDestinationDir
+          hugo --minify --environment production --cleanDestinationDir
           mkdir -p ../out/blogs
           cp -r public/* ../out/blogs/
     
