@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on caffeines</title>
-    <link>https://sadat.me:1313/blogs/tags/</link>
+    <link>https://www.sadat.me/blogs/tags/</link>
     <description>Recent content in Tags on caffeines</description>
     <image>
       <title>caffeines</title>
-      <url>https://sadat.me:1313/blogs/images/papermod-cover.png</url>
-      <link>https://sadat.me:1313/blogs/images/papermod-cover.png</link>
+      <url>https://www.sadat.me/blogs/images/papermod-cover.png</url>
+      <link>https://www.sadat.me/blogs/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sadat.me:1313/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sadat.me/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git</title>
-      <link>https://sadat.me:1313/blogs/tags/git/</link>
+      <link>https://www.sadat.me/blogs/tags/git/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://sadat.me:1313/blogs/tags/git/</guid>
+      <guid>https://www.sadat.me/blogs/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Productivity</title>
-      <link>https://sadat.me:1313/blogs/tags/productivity/</link>
+      <link>https://www.sadat.me/blogs/tags/productivity/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://sadat.me:1313/blogs/tags/productivity/</guid>
+      <guid>https://www.sadat.me/blogs/tags/productivity/</guid>
       <description></description>
     </item>
   </channel>

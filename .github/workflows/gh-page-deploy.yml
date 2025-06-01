@@ -50,7 +50,9 @@ jobs:
     - name: Build Hugo site
       run: |
           cd blogs
-          hugo --minify --environment production --baseURL="https://www.sadat.me/blogs/"
+          rm -rf public/
+          rm -rf resources/
+          hugo --minify --environment production --baseURL="https://www.sadat.me/blogs/" --cleanDestinationDir
           mkdir -p ../out/blogs
           cp -r public/* ../out/blogs/
     
