@@ -6,11 +6,19 @@
     <description>Recent content in Categories on caffeines</description>
     <image>
       <title>caffeines</title>
-      <url>http://localhost:1313/blogs/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/blogs/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/blogs/images/papermod-cover.png</url>
+      <link>http://localhost:1313/blogs/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>http://localhost:1313/blogs/categories/git/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/categories/git/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
