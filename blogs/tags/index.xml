@@ -4,6 +4,25 @@
     <title>Tags on caffeines</title>
     <link>https://caffeines.github.io/blogs/tags/</link>
     <description>Recent content in Tags on caffeines</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://caffeines.github.io/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://caffeines.github.io/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://caffeines.github.io/blogs/tags/git/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://caffeines.github.io/blogs/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://caffeines.github.io/blogs/tags/productivity/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://caffeines.github.io/blogs/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
