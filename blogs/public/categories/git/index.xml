@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on Caffeines</title>
-    <link>https://sadat.me/blogs/categories/git/</link>
+    <link>https://www.sadat.me/blogs/categories/git/</link>
     <description>Recent content in Git on Caffeines</description>
     <image>
       <title>Caffeines</title>
-      <url>https://sadat.me/blogs/images/papermod-cover.png</url>
-      <link>https://sadat.me/blogs/images/papermod-cover.png</link>
+      <url>https://www.sadat.me/blogs/images/papermod-cover.png</url>
+      <link>https://www.sadat.me/blogs/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sadat.me/blogs/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sadat.me/blogs/categories/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Worktrees</title>
-      <link>https://sadat.me/blogs/posts/git/worktree/</link>
+      <link>https://www.sadat.me/blogs/posts/git/worktree/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://sadat.me/blogs/posts/git/worktree/</guid>
+      <guid>https://www.sadat.me/blogs/posts/git/worktree/</guid>
       <description>A powerful feature for managing multiple working directories</description>
     </item>
   </channel>

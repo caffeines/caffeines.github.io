@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://sadat.me/blogs/sitemap.xml
+Sitemap: https://www.sadat.me/blogs/sitemap.xml

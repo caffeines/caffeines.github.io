@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Caffeines</title>
-    <link>https://sadat.me/blogs/categories/</link>
+    <link>https://www.sadat.me/blogs/categories/</link>
     <description>Recent content in Categories on Caffeines</description>
     <image>
       <title>Caffeines</title>
-      <url>https://sadat.me/blogs/images/papermod-cover.png</url>
-      <link>https://sadat.me/blogs/images/papermod-cover.png</link>
+      <url>https://www.sadat.me/blogs/images/papermod-cover.png</url>
+      <link>https://www.sadat.me/blogs/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sadat.me/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.sadat.me/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git</title>
-      <link>https://sadat.me/blogs/categories/git/</link>
+      <link>https://www.sadat.me/blogs/categories/git/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://sadat.me/blogs/categories/git/</guid>
+      <guid>https://www.sadat.me/blogs/categories/git/</guid>
       <description></description>
     </item>
     <item>
       <title>System</title>
-      <link>https://sadat.me/blogs/categories/system/</link>
+      <link>https://www.sadat.me/blogs/categories/system/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://sadat.me/blogs/categories/system/</guid>
+      <guid>https://www.sadat.me/blogs/categories/system/</guid>
       <description></description>
     </item>
   </channel>
