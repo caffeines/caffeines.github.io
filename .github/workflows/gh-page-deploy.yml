@@ -50,11 +50,9 @@ jobs:
     - name: Build Hugo site
       run: |
           cd blogs
-          hugo --minify --environment production --baseURL https://www.sadat.me/blogs/
+          git submodule update --init --recursive
           hugo --minify --environment production --baseURL https://www.sadat.me/blogs/
           mkdir -p ../out/blogs
-          grep -r "localhost" public/
-          grep -r "sadat.me" public/
           cp -r public/* ../out/blogs/
     
     - name: Deploy 🚀
