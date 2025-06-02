@@ -4,25 +4,23 @@
     <title>Categories on Caffeines</title>
     <link>https://www.sadat.me/blogs/categories/</link>
     <description>Recent content in Categories on Caffeines</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sadat.me/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.sadat.me/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git</title>
       <link>https://www.sadat.me/blogs/categories/git/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://www.sadat.me/blogs/categories/git/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>System</title>
       <link>https://www.sadat.me/blogs/categories/system/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://www.sadat.me/blogs/categories/system/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

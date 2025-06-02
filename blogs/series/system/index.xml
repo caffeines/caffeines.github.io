@@ -4,17 +4,16 @@
     <title>System on Caffeines</title>
     <link>https://www.sadat.me/blogs/series/system/</link>
     <description>Recent content in System on Caffeines</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sadat.me/blogs/series/system/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.sadat.me/blogs/series/system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding CPU Latency</title>
       <link>https://www.sadat.me/blogs/posts/system/cpu/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://www.sadat.me/blogs/posts/system/cpu/</guid>
-      <description>Understanding CPU Latency CPU latency refers to the time it takes for a processor to handle a specific task or instruction. It is the delay between initiating a request and receiving the corresponding output. Lower latency is generally desirable, as it indicates quicker processing and better overall performance in computing tasks. Let’s talk about some common causes of CPU latency.
-Inefficient Algorithm Inefficient algorithms can significantly impact CPU latency by prolonging the time it takes to execute tasks.</description>
+      <description>&lt;h1 id=&#34;understanding-cpu-latency&#34;&gt;Understanding CPU Latency&lt;/h1&gt;&#xA;&lt;p&gt;CPU latency refers to the time it takes for a processor to handle a specific task or instruction. It is the delay between initiating a request and receiving the corresponding output. Lower latency is generally desirable, as it indicates quicker processing and better overall performance in computing tasks. Let’s talk about some common causes of CPU latency.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;inefficient-algorithm&#34;&gt;Inefficient Algorithm&lt;/h2&gt;&#xA;&lt;p&gt;Inefficient algorithms can significantly impact CPU latency by prolonging the time it takes to execute tasks. When an inefficient algorithm is used, the CPU has to perform unnecessary or redundant operations, leading to increased processing time. This can result in higher latency, slower response times, and overall reduced system performance. Choosing efficient algorithms is crucial for optimizing CPU usage and minimizing latency in various computing applications.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
