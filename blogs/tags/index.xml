@@ -11,20 +11,41 @@
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.sadat.me/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Encryption</title>
+      <link>https://www.sadat.me/blogs/tags/encryption/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.sadat.me/blogs/tags/encryption/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://www.sadat.me/blogs/tags/security/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.sadat.me/blogs/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://www.sadat.me/blogs/tags/database/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.sadat.me/blogs/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Locking</title>
+      <link>https://www.sadat.me/blogs/tags/locking/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.sadat.me/blogs/tags/locking/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CPU</title>
       <link>https://www.sadat.me/blogs/tags/cpu/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://www.sadat.me/blogs/tags/cpu/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Encryption</title>
-      <link>https://www.sadat.me/blogs/tags/encryption/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.sadat.me/blogs/tags/encryption/</guid>
       <description></description>
     </item>
     <item>
@@ -46,13 +67,6 @@
       <link>https://www.sadat.me/blogs/tags/productivity/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://www.sadat.me/blogs/tags/productivity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>https://www.sadat.me/blogs/tags/security/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.sadat.me/blogs/tags/security/</guid>
       <description></description>
     </item>
   </channel>

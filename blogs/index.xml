@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.sadat.me/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WhatsApp এর এনক্রিপশন প্রসেস</title>
+      <link>https://www.sadat.me/blogs/posts/encryption/whatsapp/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.sadat.me/blogs/posts/encryption/whatsapp/</guid>
+      <description>WhatsApp এর এন্ড-টু-এন্ড এনক্রিপশনের বিস্তারিত ব্যাখ্যা এবং X3DH প্রোটোকলের কার্যকারিতা</description>
+    </item>
+    <item>
+      <title>Understanding Locking: Pessimistic and Optimistic Approaches</title>
+      <link>https://www.sadat.me/blogs/posts/misc/locking/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.sadat.me/blogs/posts/misc/locking/</guid>
+      <description>Two primary approaches to locking are pessimistic and optimistic locking</description>
+    </item>
     <item>
       <title>Git Worktrees</title>
       <link>https://www.sadat.me/blogs/posts/git/worktree/</link>
@@ -26,13 +40,6 @@
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://www.sadat.me/blogs/posts/system/cpu/</guid>
       <description>A deep dive into CPU latency and its impact on system performance</description>
-    </item>
-    <item>
-      <title>WhatsApp এর এনক্রিপশন প্রসেস</title>
-      <link>https://www.sadat.me/blogs/posts/encryption/whatsapp/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.sadat.me/blogs/posts/encryption/whatsapp/</guid>
-      <description>WhatsApp এর এন্ড-টু-এন্ড এনক্রিপশনের বিস্তারিত ব্যাখ্যা এবং X3DH প্রোটোকলের কার্যকারিতা</description>
     </item>
   </channel>
 </rss>

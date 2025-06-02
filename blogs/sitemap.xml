@@ -3,21 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.sadat.me/blogs/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.sadat.me/blogs/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.sadat.me/blogs/tags/cpu/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.sadat.me/blogs/categories/encryption/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.sadat.me/blogs/series/encryption/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.sadat.me/blogs/tags/encryption/</loc>
+    <lastmod>2025-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/posts/</loc>
+    <lastmod>2025-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/tags/security/</loc>
+    <lastmod>2025-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/series/</loc>
+    <lastmod>2025-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/tags/</loc>
+    <lastmod>2025-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/posts/encryption/whatsapp/</loc>
+    <lastmod>2025-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/categories/database/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/tags/database/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/series/locking/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/tags/locking/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/posts/misc/locking/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.sadat.me/blogs/tags/cpu/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.sadat.me/blogs/categories/git/</loc>
@@ -35,16 +65,7 @@
     <loc>https://www.sadat.me/blogs/tags/performance/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.sadat.me/blogs/posts/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.sadat.me/blogs/tags/productivity/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.sadat.me/blogs/tags/security/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.sadat.me/blogs/series/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.sadat.me/blogs/categories/system/</loc>
@@ -53,13 +74,7 @@
     <loc>https://www.sadat.me/blogs/series/system/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.sadat.me/blogs/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.sadat.me/blogs/posts/system/cpu/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.sadat.me/blogs/posts/encryption/whatsapp/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.sadat.me/blogs/search/</loc>
