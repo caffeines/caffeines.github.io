@@ -21,6 +21,13 @@
       <description></description>
     </item>
     <item>
+      <title>Encryption</title>
+      <link>https://www.sadat.me/blogs/tags/encryption/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.sadat.me/blogs/tags/encryption/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Git</title>
       <link>https://www.sadat.me/blogs/tags/git/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
@@ -39,6 +46,13 @@
       <link>https://www.sadat.me/blogs/tags/productivity/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://www.sadat.me/blogs/tags/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://www.sadat.me/blogs/tags/security/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.sadat.me/blogs/tags/security/</guid>
       <description></description>
     </item>
   </channel>

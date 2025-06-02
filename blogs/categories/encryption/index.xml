@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Caffeines</title>
-    <link>https://www.sadat.me/blogs/</link>
-    <description>Recent content on Caffeines</description>
+    <title>Encryption on Caffeines</title>
+    <link>https://www.sadat.me/blogs/categories/encryption/</link>
+    <description>Recent content in Encryption on Caffeines</description>
     <image>
       <title>Caffeines</title>
       <url>https://www.sadat.me/blogs/images/papermod-cover.png</url>
@@ -12,21 +12,7 @@
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.sadat.me/blogs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Git Worktrees</title>
-      <link>https://www.sadat.me/blogs/posts/git/worktree/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.sadat.me/blogs/posts/git/worktree/</guid>
-      <description>A powerful feature for managing multiple working directories</description>
-    </item>
-    <item>
-      <title>Understanding CPU Latency</title>
-      <link>https://www.sadat.me/blogs/posts/system/cpu/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.sadat.me/blogs/posts/system/cpu/</guid>
-      <description>A deep dive into CPU latency and its impact on system performance</description>
-    </item>
+    <atom:link href="https://www.sadat.me/blogs/categories/encryption/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WhatsApp এর এনক্রিপশন প্রসেস</title>
       <link>https://www.sadat.me/blogs/posts/encryption/whatsapp/</link>
