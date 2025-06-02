@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>System on Caffeines</title>
     <link>https://www.sadat.me/blogs/categories/system/</link>
     <description>Recent content in System on Caffeines</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>Caffeines</title>
+      <url>https://www.sadat.me/blogs/images/papermod-cover.png</url>
+      <link>https://www.sadat.me/blogs/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.sadat.me/blogs/categories/system/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,7 @@
       <link>https://www.sadat.me/blogs/posts/system/cpu/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://www.sadat.me/blogs/posts/system/cpu/</guid>
-      <description>&lt;h1 id=&#34;understanding-cpu-latency&#34;&gt;Understanding CPU Latency&lt;/h1&gt;&#xA;&lt;p&gt;CPU latency refers to the time it takes for a processor to handle a specific task or instruction. It is the delay between initiating a request and receiving the corresponding output. Lower latency is generally desirable, as it indicates quicker processing and better overall performance in computing tasks. Let’s talk about some common causes of CPU latency.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;inefficient-algorithm&#34;&gt;Inefficient Algorithm&lt;/h2&gt;&#xA;&lt;p&gt;Inefficient algorithms can significantly impact CPU latency by prolonging the time it takes to execute tasks. When an inefficient algorithm is used, the CPU has to perform unnecessary or redundant operations, leading to increased processing time. This can result in higher latency, slower response times, and overall reduced system performance. Choosing efficient algorithms is crucial for optimizing CPU usage and minimizing latency in various computing applications.&lt;/p&gt;</description>
+      <description>A deep dive into CPU latency and its impact on system performance</description>
     </item>
   </channel>
 </rss>

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on Caffeines</title>
     <link>https://www.sadat.me/blogs/categories/git/</link>
     <description>Recent content in Git on Caffeines</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>Caffeines</title>
+      <url>https://www.sadat.me/blogs/images/papermod-cover.png</url>
+      <link>https://www.sadat.me/blogs/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.sadat.me/blogs/categories/git/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,7 @@
       <link>https://www.sadat.me/blogs/posts/git/worktree/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://www.sadat.me/blogs/posts/git/worktree/</guid>
-      <description>&lt;h1 id=&#34;git-worktrees-a-powerful-feature-for-managing-multiple-working-directories&#34;&gt;Git Worktrees: A Powerful Feature for Managing Multiple Working Directories&lt;/h1&gt;&#xA;&lt;p&gt;Git worktrees are one of the most underutilized yet powerful features in Git. They allow us to maintain multiple working directories from a single Git repository, each with its own branch checked out. In this blog post, we’ll explore what worktrees are, their benefits, and how to effectively use them in your development workflow.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-a-git-worktree&#34;&gt;What is a Git Worktree?&lt;/h2&gt;&#xA;&lt;p&gt;A Git worktree is an additional working directory linked to our main repository. Think of it as a way to check out multiple branches simultaneously, each in its own directory, while sharing the same Git history and objects.&lt;/p&gt;</description>
+      <description>A powerful feature for managing multiple working directories</description>
     </item>
   </channel>
 </rss>
