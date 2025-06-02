@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Caffeines</title>
-    <link>https://sadat.me/blogs/tags/</link>
+    <link>https://www.sadat.me/blogs/tags/</link>
     <description>Recent content in Tags on Caffeines</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sadat.me/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sadat.me/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CPU</title>
-      <link>https://sadat.me/blogs/tags/cpu/</link>
+      <link>https://www.sadat.me/blogs/tags/cpu/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sadat.me/blogs/tags/cpu/</guid>
+      <guid>https://www.sadat.me/blogs/tags/cpu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://sadat.me/blogs/tags/git/</link>
+      <link>https://www.sadat.me/blogs/tags/git/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sadat.me/blogs/tags/git/</guid>
+      <guid>https://www.sadat.me/blogs/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Performance</title>
-      <link>https://sadat.me/blogs/tags/performance/</link>
+      <link>https://www.sadat.me/blogs/tags/performance/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sadat.me/blogs/tags/performance/</guid>
+      <guid>https://www.sadat.me/blogs/tags/performance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Productivity</title>
-      <link>https://sadat.me/blogs/tags/productivity/</link>
+      <link>https://www.sadat.me/blogs/tags/productivity/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sadat.me/blogs/tags/productivity/</guid>
+      <guid>https://www.sadat.me/blogs/tags/productivity/</guid>
       <description></description>
     </item>
     
