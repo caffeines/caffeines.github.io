@@ -1,7 +1,7 @@
 ---
 author: "Sadat Sayem"
 title: "WhatsApp এর এনক্রিপশন প্রসেস"
-date: "2019-03-11"
+date: "2025-02-06"
 description: "WhatsApp এর এন্ড-টু-এন্ড এনক্রিপশনের বিস্তারিত ব্যাখ্যা এবং X3DH প্রোটোকলের কার্যকারিতা"
 tags: ["Encryption", "Security"]
 categories: ["Encryption"]
