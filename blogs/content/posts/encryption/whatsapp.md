@@ -8,7 +8,7 @@ categories: ["Encryption"]
 series: ["Encryption"]
 aliases: ["encryption", "security"]
 cover:
-  image: images/worktree.png
+  image: images/wa-encryption.jpg
   caption: "WhatsApp মেসেজ কীভাবে সুরক্ষিত থাকে: এন্ড-টু-এন্ড এনক্রিপশনের বিস্তারিত ব্যাখ্যা এবং X3DH প্রোটোকলের কার্যকারিতা"
 ShowToc: true
 TocOpen: true
