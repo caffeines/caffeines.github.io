@@ -16,5 +16,14 @@
 What is a Git Worktree? A Git worktree is an additional working directory linked to our main repository.</description>
     </item>
     
+    <item>
+      <title>Search</title>
+      <link>https://sadat.me/blogs/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sadat.me/blogs/search/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
