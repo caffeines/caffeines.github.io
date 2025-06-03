@@ -1,0 +1,26 @@
+author:
+title:
+date:
+description: 
+tags: []
+categories: []
+series: []
+aliases: []
+cover:
+  image: images/worktree.png
+  caption: ""
+
+Sample Data:
+author: "Abu Sadat Md. Sayem"
+title: "Git Worktrees"
+date: "2019-03-11"
+description: "A powerful feature for managing multiple working directories"
+tags: ["Git", "Productivity"]
+categories: ["Git"]
+series: ["Git"]
+aliases: ["git worktrees"]
+cover:
+  image: images/worktree.png
+  caption: "Git Worktrees: A Powerful Feature for Managing Multiple Working Directories"
+ShowToc: true
+TocOpen: true

@@ -9,10 +9,31 @@
       <url>http://localhost:1313/blogs/images/papermod-cover.png</url>
       <link>http://localhost:1313/blogs/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.6</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding RSA: The Backbone of Modern Cryptography</title>
+      <link>http://localhost:1313/blogs/posts/encryption/rsa/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/posts/encryption/rsa/</guid>
+      <description>Unravel the complexities of RSA, the foundational public-key cryptosystem. This post explores its mathematical principles, how it secures digital communications, and its enduring relevance in cybersecurity.</description>
+    </item>
+    <item>
+      <title>WhatsApp এর এনক্রিপশন প্রসেস</title>
+      <link>http://localhost:1313/blogs/posts/encryption/whatsapp/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/posts/encryption/whatsapp/</guid>
+      <description>WhatsApp এর এন্ড-টু-এন্ড এনক্রিপশনের বিস্তারিত ব্যাখ্যা এবং X3DH প্রোটোকলের কার্যকারিতা</description>
+    </item>
+    <item>
+      <title>Understanding Locking: Pessimistic and Optimistic Approaches</title>
+      <link>http://localhost:1313/blogs/posts/misc/locking/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/posts/misc/locking/</guid>
+      <description>Two primary approaches to locking are pessimistic and optimistic locking</description>
+    </item>
     <item>
       <title>Git Worktrees</title>
       <link>http://localhost:1313/blogs/posts/git/worktree/</link>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Encryption on Caffeines</title>
+    <link>http://localhost:1313/blogs/categories/encryption/</link>
+    <description>Recent content in Encryption on Caffeines</description>
+    <image>
+      <title>Caffeines</title>
+      <url>http://localhost:1313/blogs/images/papermod-cover.png</url>
+      <link>http://localhost:1313/blogs/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blogs/categories/encryption/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WhatsApp এর এনক্রিপশন প্রসেস</title>
+      <link>http://localhost:1313/blogs/posts/encryption/whatsapp/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/posts/encryption/whatsapp/</guid>
+      <description>WhatsApp এর এন্ড-টু-এন্ড এনক্রিপশনের বিস্তারিত ব্যাখ্যা এবং X3DH প্রোটোকলের কার্যকারিতা</description>
+    </item>
+  </channel>
+</rss>

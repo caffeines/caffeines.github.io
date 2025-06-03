@@ -9,10 +9,31 @@
       <url>http://localhost:1313/blogs/images/papermod-cover.png</url>
       <link>http://localhost:1313/blogs/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.7</generator>
+    <generator>Hugo -- 0.147.6</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cryptography Fundamentals</title>
+      <link>http://localhost:1313/blogs/series/cryptography-fundamentals/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/series/cryptography-fundamentals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encryption</title>
+      <link>http://localhost:1313/blogs/series/encryption/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/series/encryption/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Locking</title>
+      <link>http://localhost:1313/blogs/series/locking/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/series/locking/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Git</title>
       <link>http://localhost:1313/blogs/series/git/</link>
