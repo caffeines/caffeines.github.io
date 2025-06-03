@@ -9,14 +9,18 @@ export default function BlogRedirectPage() {
   const { id } = router.query;
 
   useEffect(() => {
-    router.replace(`/blogs/page/${id}`, undefined, { shallow: true });
-  }, [id, router]);
+    /* eslint-disable */
+    router.replace(`/blogs/page/${id}`);
+  }, [id]);
 
   return (
     <div className="max-w-4xl mx-auto antialiased">
       <Head>
         <title>Redirecting</title>
       </Head>
+      <p>
+        Redirecting to the blog page...
+      </p>
     </div>
   );
 }

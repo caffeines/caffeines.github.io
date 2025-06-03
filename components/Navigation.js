@@ -67,7 +67,7 @@ const Nav = () => {
                 <Navbar.Link>
                     <Link href="/blogs">
                         <a className={getBtnCssClass("/blogs")}>
-                            Blogs
+                            My Blogs 
                         </a>
                     </Link>
                 </Navbar.Link>
