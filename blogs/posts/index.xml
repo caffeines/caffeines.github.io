@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.sadat.me/blogs/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding RSA: The Backbone of Modern Cryptography</title>
+      <link>https://www.sadat.me/blogs/posts/encryption/rsa/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.sadat.me/blogs/posts/encryption/rsa/</guid>
+      <description>Unravel the complexities of RSA, the foundational public-key cryptosystem. This post explores its mathematical principles, how it secures digital communications, and its enduring relevance in cybersecurity.</description>
+    </item>
     <item>
       <title>WhatsApp এর এনক্রিপশন প্রসেস</title>
       <link>https://www.sadat.me/blogs/posts/encryption/whatsapp/</link>

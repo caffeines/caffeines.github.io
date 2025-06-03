@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.sadat.me/blogs/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cryptography Fundamentals</title>
+      <link>https://www.sadat.me/blogs/series/cryptography-fundamentals/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.sadat.me/blogs/series/cryptography-fundamentals/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Encryption</title>
       <link>https://www.sadat.me/blogs/series/encryption/</link>
