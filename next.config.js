@@ -10,6 +10,10 @@ module.exports = {
         source: '/blogs/:path*',
         destination: '/blogs/:path*',
       },
+      {
+        source: '/page/:path*',
+        destination: '/blogs/page/:path*',
+      },
     ];
   },
 }
