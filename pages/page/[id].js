@@ -15,7 +15,7 @@ export default function ProjectDetailsPage() {
   return (
     <div className="max-w-4xl mx-auto antialiased">
       <Head>
-        <title>{project?.title}</title>
+        <title>Redirecting</title>
       </Head>
     </div>
   );
