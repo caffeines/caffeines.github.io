@@ -1,17 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
+import React from "react"
+import Head from 'next/head';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
 export default function ProjectDetailsPage() {
   const router = useRouter();
   const { id } = router.query;
 
-  // redirect to /blogs/page/:id
   useEffect(() => {
-    if (id) {
-      router.replace(`/blogs/page/${id}`);
-    }
+    router.replace(`/blogs/page/${id}`, undefined, { shallow: true });
   }, [id, router]);
+
   return (
     <div className="max-w-4xl mx-auto antialiased">
       <Head>
-        <title>Redirecting...</title>
+        <title>{project?.title}</title>
       </Head>
     </div>
   );
