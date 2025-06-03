@@ -65,9 +65,9 @@ const Nav = () => {
                     </Link>
                 </Navbar.Link>
                 <Navbar.Link>
-                    <Link href="/articles">
-                        <a className={getBtnCssClass("/articles")}>
-                            Articles
+                    <Link href="/blogs">
+                        <a className={getBtnCssClass("/blogs")}>
+                            Blogs
                         </a>
                     </Link>
                 </Navbar.Link>
