@@ -55,6 +55,11 @@ jobs:
           mkdir -p ../out/blogs
           cp -r public/* ../out/blogs/
     
+    - name: Copy notion-todo
+      run: |
+          mkdir -p ./out/notion-todo
+          cp -r notion-todo/* ./out/notion-todo/
+    
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.2.3
       with:

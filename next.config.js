@@ -10,6 +10,10 @@ module.exports = {
         source: '/blogs/:path*',
         destination: '/blogs/:path*',
       },
+      {
+        source: '/notion-todo',
+        destination: '/notion-todo',
+      },
     ];
   },
 }
