@@ -1,11 +1,14 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { about, experiences, skills, projects, moocs, contacts } from '../data'
+import { useState } from 'react'
+import { about, experiences, skills, projects, moocs, contacts, type Project } from '../data'
 
 export const Route = createFileRoute('/')({
   component: Home,
 })
 
 function Home() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
+
   return (
     <>
       <nav>
@@ -134,7 +137,12 @@ function Home() {
 
           <div className="projects-grid">
             {projects.map((project, index) => (
-              <div key={index} className="project-card">
+              <div
+                key={index}
+                className="project-card"
+                onClick={() => setSelectedProject(project)}
+                style={{ cursor: 'pointer' }}
+              >
                 <div className="project-icon">
                   {/* Placeholder icon or derive from project type */}
                   {project.title === 'eDoktor' ? '🏥' :
@@ -142,7 +150,7 @@ function Home() {
                       project.title === 'SwiftEx' ? '📦' :
                         project.title === 'RetinaLMS' ? '🎓' : '💻'}
                 </div>
-                <h3><a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:underline">{project.title}</a></h3>
+                <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="tech-stack">
                   {project.techStack.slice(0, 4).map((tech) => (
@@ -198,6 +206,48 @@ function Home() {
           <p>&copy; {new Date().getFullYear()} {about.name}. Coded with ❤️ and Coffee.</p>
         </div>
       </footer>
+
+      {selectedProject && (
+        <div className="modal-overlay" onClick={() => setSelectedProject(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <div>
+                <h3 className="modal-title">{selectedProject.title}</h3>
+                {selectedProject.associatedWith && (
+                  <div className="text-sm text-gray-500 font-handwriting mt-1 flex items-center gap-2">
+                    <span>at {selectedProject.associatedWith.companyName}</span>
+                    {/* optionally show logo if available */}
+                  </div>
+                )}
+              </div>
+              <button className="modal-close" onClick={() => setSelectedProject(null)}>✖</button>
+            </div>
+            <div className="modal-body">
+              <p>{selectedProject.longDescription}</p>
+
+              <h4 className="modal-section-title">Key Contributions</h4>
+              <ul className="modal-list">
+                {selectedProject.workDescriptions.map((desc, i) => (
+                  <li key={i}>{desc}</li>
+                ))}
+              </ul>
+
+              <h4 className="modal-section-title">Tech Stack</h4>
+              <div className="tech-stack mb-6">
+                {selectedProject.techStack.map((tech) => (
+                  <span key={tech} className="tech-pill">{tech}</span>
+                ))}
+              </div>
+
+              <div className="modal-footer">
+                <a href={selectedProject.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   )
 }

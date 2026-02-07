@@ -444,6 +444,14 @@ nav {
   position: relative;
 }
 
+.cert-content h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--ink-black);
+}
+
 .section-header h2::after {
   content: '';
   position: absolute;
@@ -804,13 +812,145 @@ nav {
   transform: rotate(-2deg);
 }
 
-.cert-content h2 {
-  font-family: 'Caveat', cursive;
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--ink-black);
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
 }
+
+.modal-content {
+  background: white;
+  border: 4px solid var(--ink-black);
+  border-radius: 2px;
+  /* Paper-like */
+  padding: 2.5rem;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.2);
+  transform: rotate(-1deg);
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  background-image: repeating-linear-gradient(transparent, transparent 29px, var(--line-blue) 29px, var(--line-blue) 30px);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px dashed var(--ink-black);
+  padding-bottom: 1rem;
+}
+
+.modal-title {
+  font-family: 'Caveat', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--ink-black);
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--marker-red);
+  font-family: 'Caveat', cursive;
+  transition: transform 0.2s ease;
+}
+
+.modal-close:hover {
+  transform: scale(1.2) rotate(90deg);
+}
+
+.modal-body p {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.2rem;
+  color: var(--pencil-gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.modal-section-title {
+  font-family: 'Caveat', cursive;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--notebook-blue);
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid var(--highlighter-yellow);
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+
+.modal-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.modal-list li {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.1rem;
+  color: var(--ink-black);
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.modal-list li::before {
+  content: '➤';
+  position: absolute;
+  left: 0;
+  color: var(--marker-red);
+  font-size: 0.8rem;
+  top: 4px;
+}
+
+.modal-footer {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px) rotate(-1deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) rotate(-1deg);
+    opacity: 1;
+  }
+}
+
+
 
 .cert-list {
   list-style: none;

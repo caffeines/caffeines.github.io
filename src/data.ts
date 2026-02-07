@@ -16,7 +16,20 @@ const logo = {
     "tigerIt": "https://tigerit.com/img/ti-logo.png",
 }
 
-export const projects = [
+export interface Project {
+    title: string;
+    description: string;
+    longDescription: string;
+    workDescriptions: string[];
+    techStack: string[];
+    link: string;
+    associatedWith?: {
+        companyName: string;
+        companyLogo: string;
+    };
+}
+
+export const projects: Project[] = [
     {
         title: 'eDoktor',
         description: 'eDoktor is a telemedicine platform that connects patients with doctors',
