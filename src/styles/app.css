@@ -375,12 +375,13 @@ nav {
 
 .arrow-doodle {
   position: absolute;
-  bottom: -40px;
-  right: -20px;
+  bottom: -30px;
+  right: -10px;
   width: 100px;
   height: 60px;
-  opacity: 0.8;
-  transform: rotate(-10deg);
+  opacity: 0.9;
+  transform: rotate(-20deg);
+  pointer-events: none;
 }
 
 /* Companies */
@@ -1326,6 +1327,8 @@ footer {
 
   .footer-socials {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
 
