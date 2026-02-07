@@ -1215,6 +1215,20 @@ footer {
   /* Companies */
   .company-grid {
     gap: 1.5rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* Allow horizontal scrolling if items don't fit */
+    justify-content: center;
+    /* Center items if they fit */
+    padding-bottom: 0.5rem;
+    /* Ensure they don't shrink too much */
+  }
+
+  /* Ensure logos don't wrap their text */
+  .company-logo {
+    white-space: nowrap;
+    font-size: 1.5rem;
+    flex-shrink: 0;
   }
 
   .company-logo {
