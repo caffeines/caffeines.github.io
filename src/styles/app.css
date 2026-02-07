@@ -1083,3 +1083,258 @@ footer {
     order: -1;
   }
 }
+
+@media (max-width: 768px) {
+
+  /* Global Font & Spacing Adjustments */
+  html {
+    font-size: 14px;
+    /* Slightly reduce base font size */
+  }
+
+  body {
+    cursor: auto;
+    /* Remove custom cursor on mobile for better UX */
+  }
+
+  /* Hide red margin line on mobile */
+  body::after {
+    display: none;
+  }
+
+  /* Reset cursor for interactive elements on mobile */
+  a,
+  button,
+  .btn,
+  .nav-cta,
+  .company-logo,
+  .timeline-card,
+  .skill-badge,
+  .project-card,
+  .cert-card-large,
+  .modal-close,
+  [role="button"] {
+    cursor: pointer !important;
+  }
+
+  /* Navigation */
+  nav {
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+
+  .nav-cta {
+    padding: 0.4rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 6rem 1.5rem 3rem;
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-group {
+    justify-content: center;
+  }
+
+  .profile-frame-container {
+    margin-top: 1rem;
+    transform: rotate(0deg);
+    /* Reset rotation to save space/fit better */
+  }
+
+  .profile-frame {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 300/380;
+  }
+
+  .arrow-doodle {
+    right: -10px;
+    width: 60px;
+    height: 40px;
+  }
+
+  /* Section Generals */
+  .section,
+  .companies,
+  .skills-section,
+  .cents-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-header h2,
+  .cert-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+  }
+
+  /* Companies */
+  .company-grid {
+    gap: 1.5rem;
+  }
+
+  .company-logo {
+    font-size: 1.5rem;
+  }
+
+  /* Timeline/Experience - Specific fixes already existed, refining */
+  .timeline-container {
+    padding: 1rem 0;
+  }
+
+  .timeline-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .timeline-role {
+    font-size: 1rem;
+  }
+
+  .timeline-card p {
+    font-size: 1rem;
+  }
+
+  /* Skills */
+  .skills-grid {
+    gap: 1rem;
+  }
+
+  .skill-badge {
+    padding: 1.2rem;
+    min-width: 100px;
+  }
+
+  .skill-name {
+    font-size: 1.2rem;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    /* Stack projects */
+    gap: 2rem;
+  }
+
+  .project-card {
+    /* Reset rotations for cleaner stacking on small screens */
+    transform: rotate(0deg) !important;
+  }
+
+  .project-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+  }
+
+  /* Certifications */
+  .cert-card-large {
+    padding: 2rem;
+    transform: rotate(0deg);
+  }
+
+  .cert-card-large::before {
+    right: 20px;
+    top: -10px;
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 95%;
+    padding: 1.5rem;
+    max-height: 90vh;
+  }
+
+  .modal-title {
+    font-size: 1.8rem;
+  }
+
+  .modal-section-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-body p,
+  .modal-list li {
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Extra Small Devices */
+  .nav-links {
+    gap: 0.8rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+    /* Full width buttons on very small screens */
+    text-align: center;
+  }
+}
