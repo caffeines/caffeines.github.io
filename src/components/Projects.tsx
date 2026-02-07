@@ -23,11 +23,15 @@ export function Projects() {
                                 style={{ cursor: 'pointer' }}
                             >
                                 <div className="project-icon">
-                                    {/* Placeholder icon or derive from project type */}
-                                    {project.title === 'eDoktor' ? '🏥' :
-                                        project.title === 'CommChat' ? '💬' :
-                                            project.title === 'SwiftEx' ? '📦' :
-                                                project.title === 'RetinaLMS' ? '🎓' : '💻'}
+                                    <span className="text-4xl">
+                                        {project.title === 'Intentify' ? '🔍' :
+                                            project.title === 'Notion Todo CLI' ? '📝' :
+                                                project.title === 'Card Platform' ? '💳' :
+                                                    project.title === 'eDoktor' ? '🏥' :
+                                                        project.title === 'CommChat' ? '💬' :
+                                                            project.title === 'SwiftEx' ? '📦' :
+                                                                project.title === 'RetinaLMS' ? '🎓' : '💻'}
+                                    </span>
                                 </div>
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>

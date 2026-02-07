@@ -31,6 +31,51 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        title: 'Card Platform',
+        description: 'Engineered RESTful APIs for bKash wallet fund addition and card management.',
+        longDescription: 'Lead developer for the bKash Card Platform, responsible for building the RESTful API suite that powers card-to-wallet transactions. By applying SOLID principles and modernizing the tech stack (Java/Go/AWS), I expanded service reach to over 8 million active users.',
+        workDescriptions: [
+            'Engineered RESTful APIs to streamline the addition of funds to bKash wallets from VISA, Amex, and Master Cards, as well as for card token creation and eﬃcient card management.',
+            'Reduced transaction completion time by 40 percent.',
+            'Enhanced code maintainability by applying SOLID principles and various design patterns.',
+            'Shipped the bKash Add Money and Back to Back transaction (Direct payment from Visa Card to bKash Merchant) to 8+ million users to increase user adoption and engagement.',
+            'Designed and implemented a robust Key Management System (KMS) to enhance the security and maintainability of secrets and certificate management across the platform.'
+        ],
+        techStack: ['Java', 'Go', 'DynamoDB', 'Spring Boot', 'Redis', 'Docker', 'AWS', 'React.js'],
+        link: 'https://www.bkash.com/products-services/add-money',
+        associatedWith: {
+            companyName: "bKash Limited",
+            companyLogo: logo.bKash,
+        }
+    },
+    {
+        title: 'Intentify',
+        description: 'AI-Powered Product Search & Recommendation API.',
+        longDescription: 'An intelligent e-commerce search platform that supports natural-language queries (e.g., Italian leather shoes under $200) and returns ranked product recommendations.',
+        workDescriptions: [
+            'Built an intelligent e-commerce search platform that supports natural-language queries (e.g., Italian leather shoes under $200) and returns ranked product recommendations.',
+            'Implemented an LLM-powered query analyzer using Langchain to extract structured intent (keywords, category, price range, rating, brand, origin) and convert it into deterministic search + filter rules.',
+            'Designed a hybrid retrieval pipeline: semantic vector similarity search with ChromaDB (OpenAI embeddings) combined with PostgreSQL-backed filtering for precise, scalable results.',
+            'Developed a clean REST API with async FastAPI; added tracing/monitoring for LLM operations using LangSmith for debugging and observability.',
+            'Delivered a modern Next.js (App Router) frontend for interactive search and browsing, with type-safe integration across the stack.'
+        ],
+        techStack: ['FastAPI', 'Python', 'PostgreSQL', 'SQLAlchemy', 'ChromaDB', 'OpenAI', 'LangChain', 'LangSmith', 'Next.js'],
+        link: 'https://github.com/caffeines/Intentify',
+    },
+    {
+        title: 'Notion Todo CLI',
+        description: 'A Go-based CLI for managing Notion todos directly from the terminal.',
+        longDescription: 'A powerful CLI tool that allows users to add, list, and update Notion todos directly from their terminal. It features a secure local configuration, interactive setup, and fast, ergonomic commands.',
+        workDescriptions: [
+            'Built a Go-based CLI that lets you add, list, and update Notion todos directly from the terminal (with due dates and status like Todo / In progress / Done).',
+            'Implemented secure local config with Notion API integration so users can connect their own Notion database in minutes using an interactive setup (todo guide).',
+            'Added fast, ergonomic commands with aliases (todo a, todo l, etc.) and an interactive list view to manage tasks without opening Notion.',
+            'Packaged for easy install (Homebrew, install script, go install) and structured the code with clean interfaces for Notion, config, and file services.'
+        ],
+        techStack: ['Go', 'PromptUI', 'Bubble Tea', 'Cobra', 'Notion API'],
+        link: 'https://github.com/caffeines/notion-todo-cli',
+    },
+    {
         title: 'eDoktor',
         description: 'eDoktor is a telemedicine platform that connects patients with doctors',
         longDescription: 'eDoktor is a telemedicine platform that connects patients with doctors. Patients can book appointments with doctors and get a consultation from anywhere. Doctors can manage their appointments, patients, and prescriptions.',
@@ -70,19 +115,6 @@ export const projects: Project[] = [
             companyName: "TigerIT Bangladesh Ltd.",
             companyLogo: logo.tigerIt,
         }
-    },
-    {
-        title: 'SwiftEx',
-        description: 'SwiftEx is an Open Source Parcel Delivery Application for merchants and customers.',
-        longDescription: 'SwiftEx is an Open Source Delivery Application. It is a delivery application that allows merchant create parcel and manage their parcel. Customers can also track their parcel.',
-        workDescriptions: [
-            'Developed RESTful APIs using Go’s Echo framework for various business processes.',
-            'Implemented data storage solutions using MongoDB.',
-            'Worked on improving application performance and scalability using Go’s concurrency features.',
-            'Collaborated with the team to integrate front-end and back-end systems using React.js and Vue.js.',
-        ],
-        techStack: ['Go', 'Echo', 'Google Phone Auth', 'MongoDB', 'Redis', 'React.js', 'Vue.js', 'Docker'],
-        link: 'https://github.com/techartificer/swiftex-server',
     },
     {
         title: 'RetinaLMS',
