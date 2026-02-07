@@ -15,6 +15,10 @@ export default defineConfig({
     }),
     tanstackStart({
       srcDirectory: 'src',
+      prerender: {
+        enabled: true,
+        crawlLinks: true,
+      },
     }),
     viteReact(),
     nitro(),

@@ -14,6 +14,7 @@ function Home() {
       <nav>
         <a href="#" className="logo">SADAT SAYEM</a>
         <ul className="nav-links">
+          <li><a href="#">Home</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
