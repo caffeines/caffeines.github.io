@@ -73,7 +73,7 @@ export const projects: Project[] = [
             'Packaged for easy install (Homebrew, install script, go install) and structured the code with clean interfaces for Notion, config, and file services.'
         ],
         techStack: ['Go', 'PromptUI', 'Bubble Tea', 'Cobra', 'Notion API'],
-        link: 'https://github.com/caffeines/notion-todo-cli',
+        link: '/notion-todo/index.html',
     },
     {
         title: 'eDoktor',

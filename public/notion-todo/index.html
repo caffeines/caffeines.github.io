@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion Todo CLI - Manage Your Todos from Terminal</title>
+    <meta name="description" content="A powerful command-line interface for managing todo items using Notion database integration. Add, list, and manage todos directly from your terminal.">
+    <meta name="keywords" content="notion, todo, cli, command-line, terminal, productivity, task management">
+    
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sadat.me/notion-todo/">
+    <meta property="og:title" content="Notion Todo CLI - Manage Your Todos from Terminal">
+    <meta property="og:description" content="A powerful command-line interface for managing todo items using Notion database integration.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.sadat.me/notion-todo/">
+    <meta property="twitter:title" content="Notion Todo CLI - Manage Your Todos from Terminal">
+    <meta property="twitter:description" content="A powerful command-line interface for managing todo items using Notion database integration.">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✅</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0a0a0a;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        header {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #999;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            font-size: 15px;
+        }
+        
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+        
+        main {
+            margin-top: 80px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 120px 0 80px;
+        }
+        
+        .hero h1 {
+            font-size: clamp(48px, 6vw, 72px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: #999;
+            margin-bottom: 48px;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 80px;
+        }
+        
+        .btn {
+            padding: 16px 32px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: #ffffff;
+            color: #000000;
+        }
+        
+        .btn-primary:hover {
+            background: #cccccc;
+            transform: translateY(-1px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #999;
+            border: 1px solid #333;
+        }
+        
+        .btn-secondary:hover {
+            border-color: #ffffff;
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+        
+        .features {
+            padding: 80px 0;
+            background: #111111;
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
+        
+        .features-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #999;
+            margin-bottom: 64px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+        }
+        
+        .feature-card {
+            background: #1a1a1a;
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid #333;
+            transition: all 0.2s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.05);
+            border-color: #555;
+        }
+        
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+            color: #ffffff;
+        }
+        
+        .feature-card p {
+            color: #999;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+        
+        .installation {
+            padding: 80px 0;
+            background: #0a0a0a;
+        }
+        
+        .installation h2 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
+        
+        .install-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #999;
+            margin-bottom: 64px;
+        }
+        
+        .install-options {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .install-card {
+            background: #1a1a1a;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: all 0.2s ease;
+        }
+        
+        .install-card:hover {
+            background: #222222;
+        }
+        
+        .install-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #ffffff;
+        }
+        
+        .code-block {
+            background: #1a1a1a;
+            color: #e0e0e0;
+            padding: 16px;
+            border-radius: 8px;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            position: relative;
+            margin: 12px 0;
+        }
+        
+        .demo {
+            padding: 80px 0;
+            background: #111111;
+        }
+        
+        .demo h2 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
+        
+        .demo-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #999;
+            margin-bottom: 48px;
+        }
+        
+        .demo-terminal {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .terminal-header {
+            background: #2a2a2a;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .dot-red { background: #ff5f56; }
+        .dot-yellow { background: #ffbd2e; }
+        .dot-green { background: #27ca3f; }
+        
+        .terminal-content {
+            padding: 24px;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .terminal-line {
+            margin: 8px 0;
+        }
+        
+        .prompt { color: #4a9eff; }
+        .command { color: #ffffff; }
+        .output { color: #6bcf7f; }
+        .comment { color: #8e8e93; }
+        
+        .quick-commands {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            max-width: 600px;
+            margin: 48px auto 0;
+        }
+        
+        .command-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #333;
+            transition: all 0.2s ease;
+        }
+        
+        .command-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
+        }
+        
+        .command-card code {
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 16px;
+        }
+        
+        .command-card small {
+            color: #999;
+            font-size: 14px;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 48px 0;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+        
+        .footer-links a {
+            color: #999;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #e0e0e0;
+        }
+        
+        .footer p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 0 60px;
+            }
+            
+            .hero h1 {
+                font-size: 48px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .features, .installation, .demo {
+                padding: 60px 0;
+            }
+            
+            .features h2, .installation h2, .demo h2 {
+                font-size: 32px;
+            }
+            
+            .footer-links {
+                flex-wrap: wrap;
+                gap: 16px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .copy-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #333;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .copy-btn:hover {
+            background: #555;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">
+                📋
+                Notion Todo CLI</a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#installation">Install</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="https://github.com/caffeines/notion-todo">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Notion Todo CLI</h1>
+                <p>Manage your todos directly from the terminal with seamless Notion integration. Simple, fast, and powerful.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#installation" class="btn btn-primary">Get Started</a>
+                    <a href="https://github.com/caffeines/notion-todo" class="btn btn-secondary">View Source</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Why Choose This CLI?</h2>
+                <p class="features-subtitle">Designed for developers who value simplicity and efficiency in their workflow.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">⚡</span>
+                        <h3>Blazing Fast</h3>
+                        <p>Add and manage todos instantly with intuitive commands in seconds.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <span class="feature-icon">🎯</span>
+                        <h3>Simple Setup</h3>
+                        <p>Easy configuration with an interactive setup guide that walks you through everything step by step.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <span class="feature-icon">🔄</span>
+                        <h3>Seamless Sync</h3>
+                        <p>Seamlessly syncs with your Notion database. Access your todos anywhere, anytime.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <span class="feature-icon">🏠</span>
+                        <h3>Local Storage</h3>
+                        <p>Credentials stored securely on your machine. Your data stays private and under your control.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <span class="feature-icon">🧠</span>
+                        <h3>Smart Management</h3>
+                        <p>Interactive list view with delete, status updates, and due date management.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <span class="feature-icon">🎨</span>
+                        <h3>Developer First</h3>
+                        <p>Clean interface, helpful messages, and commands that make sense. Built by developers, for developers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="installation">
+            <div class="container">
+                <h2>Quick Installation</h2>
+                <p class="install-subtitle">Choose your preferred method and get started in seconds.</p>
+                
+                <div class="install-options">
+                    <div class="install-card">
+                        <h3>🐧 Linux</h3>
+                        <div class="code-block">
+                            <button class="copy-btn" onclick="copyToClipboard('linux-install')">Copy</button>
+                            <div id="linux-install">curl -sSL https://raw.githubusercontent.com/caffeines/notion-todo/main/install.sh | bash</div>
+                        </div>
+                    </div>
+                    
+                    <div class="install-card">
+                        <h3>🍎 macOS</h3>
+                        <div class="code-block">
+                            <button class="copy-btn" onclick="copyToClipboard('macos-tap')">Copy</button>
+                            <div id="macos-tap">brew tap caffeines/tap</div>
+                        </div>
+                        <div class="code-block">
+                            <button class="copy-btn" onclick="copyToClipboard('macos-install')">Copy</button>
+                            <div id="macos-install">brew install notion-todo</div>
+                        </div>
+                    </div>
+                    
+                    <div class="install-card">
+                        <h3>🔧 Go Install</h3>
+                        <div class="code-block">
+                            <button class="copy-btn" onclick="copyToClipboard('go-install')">Copy</button>
+                            <div id="go-install">go install github.com/caffeines/notion-todo@latest</div>
+                        </div>
+                    </div>
+                    
+                    <div class="install-card">
+                        <h3>📦 Download</h3>
+                        <p style="margin-top: 8px; color: #999; font-size: 14px;">Pre-built binaries for all platforms available on <a href="https://github.com/caffeines/notion-todo/releases" style="color: #ffffff; text-decoration: underline;">GitHub Releases</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="demo">
+            <div class="container">
+                <h2>See It In Action</h2>
+                <p class="demo-subtitle">From setup to daily use in just a few commands.</p>
+                
+                <div class="demo-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dot dot-red"></div>
+                        <div class="terminal-dot dot-yellow"></div>
+                        <div class="terminal-dot dot-green"></div>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="terminal-line"><span class="comment"># Setup in 2 minutes</span></div>
+                        <div class="terminal-line"><span class="prompt">$</span> <span class="command">todo guide</span></div>
+                        <div class="terminal-line"><span class="output">🎯 Welcome to Notion Todo CLI Setup Guide!</span></div>
+                        <div class="terminal-line"></div>
+                        
+                        <div class="terminal-line"><span class="comment"># Add todos instantly</span></div>
+                        <div class="terminal-line"><span class="prompt">$</span> <span class="command">todo add "Review pull requests"</span></div>
+                        <div class="terminal-line"><span class="output">✅ Todo added successfully!</span></div>
+                        <div class="terminal-line"></div>
+                        
+                        <div class="terminal-line"><span class="comment"># List and manage</span></div>
+                        <div class="terminal-line"><span class="prompt">$</span> <span class="command">todo list</span></div>
+                        <div class="terminal-line"><span class="output">📋 Interactive todo management opened...</span></div>
+                    </div>
+                </div>
+                
+                <div class="quick-commands">
+                    <div class="command-card">
+                        <code>todo g</code><br>
+                        <small>Setup guide</small>
+                    </div>
+                    <div class="command-card">
+                        <code>todo a "task"</code><br>
+                        <small>Add todo</small>
+                    </div>
+                    <div class="command-card">
+                        <code>todo l</code><br>
+                        <small>List todos</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/caffeines/notion-todo">GitHub</a>
+                <a href="https://github.com/caffeines/notion-todo/releases">Releases</a>
+                <a href="https://github.com/caffeines/notion-todo/issues">Issues</a>
+                <a href="https://github.com/caffeines/notion-todo/blob/main/README.md">Docs</a>
+            </div>
+            <p>Open source • Built with ❤️ for developers</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyToClipboard(elementId) {
+            const element = document.getElementById(elementId);
+            const text = element.textContent;
+            
+            navigator.clipboard.writeText(text).then(function() {
+                const button = element.parentElement.querySelector('.copy-btn');
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                button.style.background = '#22c55e';
+                button.style.color = '#ffffff';
+                
+                setTimeout(function() {
+                    button.textContent = originalText;
+                    button.style.background = '#333';
+                    button.style.color = '#ffffff';
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe feature cards for animation
+        document.querySelectorAll('.feature-card, .install-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
