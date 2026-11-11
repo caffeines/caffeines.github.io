@@ -23,24 +23,11 @@ export const Route = createRootRoute({
       },
       ...seo({
         title: 'Abu Sadat Md. Sayem - Software Engineer Portfolio',
-        description: `Senior Software Engineer from Bangladesh with 6.5+ years of experience building scalable systems.`,
+        description: `Assistant Lead Engineer at bKash, based in Bangladesh, building scalable backend systems.`,
       }),
     ],
     links: [
       { rel: 'stylesheet', href: appCss },
-      {
-        rel: 'preconnect',
-        href: 'https://fonts.googleapis.com',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://fonts.gstatic.com',
-        crossOrigin: 'anonymous',
-      },
-      {
-        href: 'https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Architects+Daughter&family=Indie+Flower&display=swap',
-        rel: 'stylesheet',
-      },
     ],
   }),
   errorComponent: DefaultCatchBoundary,
@@ -50,13 +37,18 @@ export const Route = createRootRoute({
 
 function RootDocument() {
   return (
-    <html>
+    <html lang="en">
       <head>
         <HeadContent />
       </head>
       <body>
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
         <Outlet />
-        <TanStackRouterDevtools position="bottom-right" />
+        {import.meta.env.DEV && (
+          <TanStackRouterDevtools position="bottom-right" />
+        )}
         <Scripts />
       </body>
     </html>

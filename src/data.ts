@@ -135,53 +135,92 @@ export const projects: Project[] = [
     },
 ]
 
-export const experiences = [
+interface ExperienceRole {
+    startDate: string;
+    endDate: string;
+    position: string;
+    descriptions: string[];
+    techStack: string[];
+    promoted?: boolean;
+}
+
+export const experiences: {
+    companyName: string;
+    startDate: string;
+    endDate: string;
+    image: string;
+    roles: ExperienceRole[];
+}[] = [
     {
         companyName: "bKash Limited",
         startDate: "June 2023", endDate: "Present",
-        descriptions: [
-            "Working on secure backend solutions to support bKash's Visa Add Money feature, designed for scalability.",
-        ],
-        position: "Senior Engineer, Software Development, Research & Engineering",
-        techStack: ["Java", "Spring Boot", "DynamoDB", "Redis", "Maven", "Docker"],
         image: logo.bKash,
+        roles: [
+            {
+                startDate: "May 2026", endDate: "Present",
+                position: "Assistant Lead Engineer, Software Development, Research & Engineering",
+                promoted: true,
+                descriptions: [
+                    "Led backend development for Mastercard Add Money and secure card saving in the bKash app.",
+                    "Built scalable Go backend services for bKash Forest (বিকাশ বন).",
+                ],
+                techStack: ["Go", "Payment Card Processing"],
+            },
+            {
+                startDate: "June 2023", endDate: "April 2026",
+                descriptions: [
+                    "Launched the bKash Visa & Amex Native Add Money service and passthrough transactions (direct Visa-to-merchant payments), driving increased user adoption and engagement.",
+                ],
+                position: "Senior Engineer, Software Development, Research & Engineering",
+                techStack: ["Java", "Spring Boot", "DynamoDB", "Redis", "Maven", "Docker"],
+            },
+        ],
     },
     {
         companyName: "Durbin Labs Ltd.",
         startDate: "June 2022", endDate: "May 2023",
-        descriptions: [
-            "Developed scalable Learning Management Systems and Telemedicine applications with cutting-edge technology",
-            "Led a web team in developing and maintaining web applications consisting of 4 developers."
-        ],
-        position: "Senior Software Engineer",
-        techStack: ["Go", "Node.js", "TypeScript", "Nest.js", "Express.js", "WebSockets", "React.js", "MongoDB", "Redis", "Docker", "AWS", "NGINX"],
         image: logo.durbin,
+        roles: [{
+            startDate: "June 2022", endDate: "May 2023",
+            descriptions: [
+                "Developed scalable Learning Management Systems and Telemedicine applications with cutting-edge technology",
+                "Led a web team in developing and maintaining web applications consisting of 4 developers."
+            ],
+            position: "Senior Software Engineer",
+            techStack: ["Go", "Node.js", "TypeScript", "Nest.js", "Express.js", "WebSockets", "React.js", "MongoDB", "Redis", "Docker", "AWS", "NGINX"],
+        }],
     },
     {
         companyName: "TigerIT Bangladesh Ltd.",
         startDate: "March 2021", endDate: "May 2022",
-        descriptions: [
-            "Built a modern enterprise video communication cloud platform with cutting edge technology",
-        ],
-        position: "Software Engineer",
-        techStack: ["Python", "Node.js", "Python-Flask", "MQTT", "React.js", "PostgreSQL", "Redis", "Celery", "Twilio", "VoIP"],
         image: logo.tigerIt,
+        roles: [{
+            startDate: "March 2021", endDate: "May 2022",
+            descriptions: [
+                "Built a modern enterprise video communication cloud platform with cutting edge technology",
+            ],
+            position: "Software Engineer",
+            techStack: ["Python", "Node.js", "Python-Flask", "MQTT", "React.js", "PostgreSQL", "Redis", "Celery", "Twilio", "VoIP"],
+        }],
     },
     {
         companyName: "Durbin Labs Ltd.",
         startDate: "September 2019", endDate: "February 2021",
-        descriptions: [
-            "Built next-generation cloud solutions for the international market.", "Actively involved in full-stack development in cloud platforms using Node.js, Vue.js, and WebRTC."
-        ],
-        position: "Software Engineer",
-        techStack: ["Node.js", "Express.js", "WebSockets", "Vue.js", "MongoDB", "Redis", "React.js", "AWS", "NGINX"],
         image: logo.durbin,
+        roles: [{
+            startDate: "September 2019", endDate: "February 2021",
+            descriptions: [
+                "Built next-generation cloud solutions for the international market.", "Actively involved in full-stack development in cloud platforms using Node.js, Vue.js, and WebRTC."
+            ],
+            position: "Software Engineer",
+            techStack: ["Node.js", "Express.js", "WebSockets", "Vue.js", "MongoDB", "Redis", "React.js", "AWS", "NGINX"],
+        }],
     },
 ]
 
 export const about = {
     name: "Abu Sadat Md. Sayem",
-    jobDescription: "a software developer from Bangladesh. Currently working as a Senior Software Engineer at",
+    jobDescription: "a software developer from Bangladesh. Currently working as an Assistant Lead Engineer at",
     company: {
         name: "bKash Limited",
         link: "https://www.bkash.com",

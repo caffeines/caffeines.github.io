@@ -1,16 +1,24 @@
-
 export function Companies() {
-    return (
-        <section className="companies">
-            <div className="companies-container">
-                <div className="companies-title">Building solutions for companies like ✨</div>
-                <div className="company-grid">
-                    <div className="company-logo">bKash</div>
-                    <div className="company-logo">TigerIT</div>
-                    <div className="company-logo">Durbin Labs</div>
-                    {/* <div className="company-logo">CommChat</div> */}
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <section className="companies" aria-label="Companies I've worked with">
+      <div className="companies-container">
+        <p className="companies-title">
+          GOOD PEOPLE.
+          <br />
+          MEANINGFUL WORK.
+        </p>
+        <div className="company-grid">
+          <span className="company-logo">
+            bKash<span className="company-symbol">✳</span>
+          </span>
+          <span className="company-logo tiger">
+            Tiger<span>IT</span>
+          </span>
+          <span className="company-logo durbin">
+            durbin labs<span>.</span>
+          </span>
+        </div>
+      </div>
+    </section>
+  )
 }
